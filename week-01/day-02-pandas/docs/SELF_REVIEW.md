@@ -43,11 +43,10 @@
 See `docs/CIA_INTERACTIONS.md` for the prompts and response summaries.
 
 ## Git Requirements
-
-* [ ] Minimum 2 commits completed.
-* [ ] Changes pushed to GitHub.
-* [ ] Pull Request created or updated.
-* [ ] PR description includes what changed, why, and how to test.
+* [x] Minimum 2 commits completed.
+* [x] Changes pushed to GitHub.
+* [x] Pull Request created or updated.
+* [x] PR description includes what changed, why, and how to test.
 
 ## Viva Preparation
 
