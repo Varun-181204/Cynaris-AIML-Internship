@@ -35,8 +35,9 @@
 
 ## Git Requirements
 
-- [ ] Minimum 2 W1D4 commits completed.
-- [ ] Changes pushed to the Week 1 branch.
+- [x] First W1D4 implementation commit completed.
+- [ ] Second W1D4 documentation commit completed.
+- [x] Changes pushed to the Week 1 branch.
 - [ ] Existing Week 1 Pull Request updated.
 
 ## Viva Preparation
