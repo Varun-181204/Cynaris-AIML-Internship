@@ -1,0 +1,61 @@
+W1D4 — Exploratory Data Analysis Results
+
+Dataset:
+India Census 2011 district-level dataset
+
+Dataset shape:
+640 rows × 118 columns
+
+Data types:
+116 numeric columns
+2 string columns
+
+Missing values:
+No missing values were found in the inspected columns.
+The dataset contains 0 missing values across all columns.
+
+Duplicate rows:
+The dataset contains 0 duplicate rows.
+
+Descriptive statistics:
+Population:
+- Mean: 1,891,961 approximately
+- Median: 1,557,367 approximately
+- Minimum: 8,004
+- Maximum: 11,060,150
+
+Top 10 states by district count:
+1. Uttar Pradesh — 71
+2. Madhya Pradesh — 50
+3. Bihar — 38
+4. Maharashtra — 35
+5. Rajasthan — 33
+6. Tamil Nadu — 32
+7. Orissa — 30
+8. Karnataka — 30
+9. Assam — 27
+10. Gujarat — 26
+
+Five EDA observations:
+
+1. The dataset contains 640 district records and 118 columns,
+   providing a wide range of demographic and household features.
+
+2. Population varies substantially between districts, from
+   approximately 8,004 to 11.06 million.
+
+3. The dataset contains no missing values, so no immediate
+   missing-value treatment is required for this EDA.
+
+4. Uttar Pradesh has the highest number of district records
+   in this dataset, with 71 districts.
+
+5. Many demographic variables are strongly related because
+   they represent components of population totals. These
+   correlations should be considered when selecting features
+   for future machine-learning models.
+
+Generated plots:
+- numeric_distributions.png
+- correlation_heatmap.png
+- top_10_state_counts.png

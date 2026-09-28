@@ -1,6 +1,5 @@
 """NumPy fundamentals for Cynaris AI/ML Internship — W1D1."""
 
-import numpy as np
 from pathlib import Path
 
 import numpy as np
@@ -87,6 +86,9 @@ def calculate_dataset_statistics() -> None:
     """Calculate statistics from the Iris CSV dataset."""
     project_root = Path(__file__).resolve().parents[3]
     dataset_path = project_root / "week-01" / "day-01-numpy" / "data" / "iris.csv"
+
+    if not dataset_path.is_file():
+        raise FileNotFoundError(f"Dataset not found at: {dataset_path}")
 
     dataset = pd.read_csv(dataset_path)
 

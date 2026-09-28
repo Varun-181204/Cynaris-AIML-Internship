@@ -1,0 +1,56 @@
+W1D5 — Data Visualization Results
+
+Dataset:
+India Census 2011 district-level dataset
+
+Dataset shape:
+640 rows × 118 columns
+
+Data types:
+116 numeric columns
+2 string columns
+
+Visualizations generated:
+
+1. Population Distribution
+   File: population_distribution.png
+   Purpose: Shows the distribution of district population values.
+
+2. Population Box Plot
+   File: population_boxplot.png
+   Purpose: Shows population spread and potential outliers.
+
+3. Correlation Heatmap
+   File: correlation_heatmap.png
+   Purpose: Shows relationships between selected numerical census features.
+
+4. Top 10 States by District Count
+   File: top_10_states.png
+   Purpose: Compares the number of district records across the top 10 states.
+
+Key observations:
+
+1. District population varies substantially across the dataset.
+
+2. The population distribution is uneven, with some districts having
+   substantially larger populations than others.
+
+3. The box plot helps identify unusually high population values that
+   require further investigation as potential outliers.
+
+4. Several demographic variables show strong correlations because
+   related variables may represent components of larger population
+   measures.
+
+5. The correlation heatmap can help identify potentially redundant
+   features before machine-learning model development.
+
+6. The top-10 state visualization provides a simple comparison of
+   district representation across states.
+
+Validation:
+
+- Visualization script executed successfully.
+- Four visualization files generated.
+- Black formatting check passed.
+- Dataset path validation passed.
