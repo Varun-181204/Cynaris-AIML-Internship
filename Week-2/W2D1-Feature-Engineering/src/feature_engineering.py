@@ -106,18 +106,27 @@ plt.savefig(os.path.join(OUTPUT_DIR, "distributions_before_scaling.png"))
 plt.close()
 
 # Distribution plots: after scaling
-fig, axes = plt.subplots(2, 2, figsize=(12, 8))
-fig.suptitle("Feature Distributions After Scaling")
+scalers = {
+    "StandardScaler": standard_df,
+    "MinMaxScaler": minmax_df,
+    "RobustScaler": robust_df,
+}
 
-for ax, feature in zip(axes.ravel(), numeric_features):
-    ax.hist(standard_df[feature], bins=15, edgecolor="black")
-    ax.set_title(f"{feature} - StandardScaler")
-    ax.set_xlabel("Scaled Value")
-    ax.set_ylabel("Frequency")
+for scaler_name, scaled_df in scalers.items():
+    fig, axes = plt.subplots(2, 2, figsize=(12, 8))
+    fig.suptitle(f"Feature Distributions After {scaler_name}")
 
-plt.tight_layout()
-plt.savefig(os.path.join(OUTPUT_DIR, "distributions_after_scaling.png"))
-plt.close()
+    for ax, feature in zip(axes.ravel(), numeric_features):
+        ax.hist(scaled_df[feature], bins=15, edgecolor="black")
+        ax.set_title(feature)
+        ax.set_xlabel("Scaled Value")
+        ax.set_ylabel("Frequency")
+
+    plt.tight_layout()
+
+    filename = f"distributions_after_{scaler_name.lower()}.png"
+    plt.savefig(os.path.join(OUTPUT_DIR, filename))
+    plt.close()
 
 print("\nScaling distribution plots saved successfully.")
 

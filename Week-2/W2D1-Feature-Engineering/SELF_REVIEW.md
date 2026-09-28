@@ -10,7 +10,9 @@
 - [x] MinMaxScaler applied.
 - [x] RobustScaler applied.
 - [x] Feature distributions plotted before scaling.
-- [x] Feature distributions plotted after scaling.
+- [x] Feature distributions plotted after StandardScaler.
+- [x] Feature distributions plotted after MinMaxScaler.
+- [x] Feature distributions plotted after RobustScaler.
 - [x] SelectKBest applied using ANOVA F-test.
 - [x] Feature scores documented.
 - [x] Iris dataset limitation documented: only 4 numeric input features are available, so selecting 5 features is not possible.
@@ -22,14 +24,15 @@
 ## Git Workflow
 
 - [x] Working on the required W2 branch.
-- [x] First descriptive commit completed.
-- [ ] Second required commit completed.
-- [ ] Changes pushed to GitHub.
-- [ ] Pull Request created.
+- [x] Minimum 2 descriptive commits completed.
+- [x] Changes pushed to GitHub.
+- [x] Pull Request created.
 
 ## CIA / Mentor Review
 
-- [ ] CIA interaction 1 completed.
-- [ ] CIA interaction 2 completed.
+- [x] CIA interaction 1 completed.
+- [x] CIA interaction 2 completed.
 
-Note: CIA review was temporarily unavailable during implementation. The review requirement will be completed when the CIA service becomes available.
+## Self-Review Summary
+
+The W2D1 implementation successfully demonstrates categorical encoding, feature scaling, distribution comparison, and feature selection using the Iris dataset. The three scaler outputs were generated separately for clear comparison. The dataset contains only four numeric predictors, so all four available features were ranked instead of selecting five unavailable features.
