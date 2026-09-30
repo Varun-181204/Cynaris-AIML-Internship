@@ -152,3 +152,15 @@ matrix to measure the effect of balancing the dataset.
 
 \- Matplotlib
 
+
+## Self-Review Checklist
+
+- [x] SMOTE implementation completed.
+- [x] Train-test split performed before SMOTE.
+- [x] SMOTE applied only to training data.
+- [x] Class distribution checked before and after SMOTE.
+- [x] Output CSV generated.
+- [x] Distribution visualization generated.
+- [x] Code tested successfully.
+- [x] Viva questions answered.
+- [x] Documentation completed.
