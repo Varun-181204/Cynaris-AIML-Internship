@@ -1,0 +1,4 @@
+Model,Accuracy
+Decision Tree,0.9122807017543859
+Tuned Decision Tree,0.9210526315789473
+Random Forest,0.956140350877193
