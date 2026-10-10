@@ -1,52 +1,51 @@
-# W1D4 CIA Mentor Interactions
+# W1D4 CIA Interactions — Exploratory Data Analysis
 
-## Interaction 1 — EDA Code Review
+## Interaction 1 — Full-Stack Mentor Code Review
 
-### Prompt
+### Mentor Focus
+Reviewed the completed W1D4 Exploratory Data Analysis implementation against the internship requirements.
 
-Review my W1D4 Pandas EDA workflow for code quality and internship standards. Check dataset loading, descriptive analysis, missing-value inspection, visualization structure, error handling, and Python formatting.
+### Relevant Feedback
+- The implementation correctly loads the India Census 2011 dataset using `pathlib.Path` and validates that the dataset file exists.
+- The EDA workflow correctly uses `info()`, `describe()`, and missing-value analysis.
+- Numeric columns are selected using `select_dtypes(include="number")`.
+- The implementation creates distributions for the numeric columns using histograms.
+- A correlation heatmap is generated to analyze relationships between numeric features.
+- The implementation calculates and visualizes the top 10 states by district count.
+- Output directories are created with `mkdir(parents=True, exist_ok=True)`.
+- Figures are closed after saving using `plt.close()`.
+- The code is organized into functions with type hints, docstrings, and a `__main__` guard.
+- CIA identified `Path(__file__).resolve().parents[3]` as a maintainability consideration because the path depends on the current project structure.
+- CIA also suggested optional improvements such as handling possible string-formatted numeric columns and normalizing column names.
 
-### Summary of Feedback
-
-- Keep dataset loading separate from EDA execution.
-- Use `pathlib.Path` for file paths.
-- Use numeric columns for correlation analysis.
-- Save plots as reproducible output files.
-- Add validation for the dataset path.
-- Keep plotting operations organized and close figures after saving.
-- Format the Python file using Black.
-
-### Changes Applied
-
-- Separated dataset loading and EDA execution.
-- Added dataset path validation.
-- Selected numeric columns explicitly for statistical analysis and correlation.
-- Saved all required visualizations to the outputs directory.
-- Added `plt.close()` after saving plots.
-- Applied Black formatting.
+### Action Taken
+The mentor review confirmed that the implementation satisfies the explicit W1D4 EDA requirements. The path-resolution and data-type suggestions were treated as optional maintainability improvements and did not require unnecessary scope changes for the internship task.
 
 ---
 
-## Interaction 2 — EDA Findings Review
+## Interaction 2 — Full-Stack Mentor Deliverables Review
 
-### Prompt
+### Mentor Focus
+Reviewed the W1D4 implementation and its evidence against the expected EDA deliverables.
 
-Review my EDA findings for the India Census 2011 dataset. Check whether the observations about distributions, missing values, state counts, and correlations are reasonable and identify areas that may require further investigation.
+### Relevant Feedback
+- The implementation covers dataset inspection, descriptive statistics, missing-value analysis, numeric-column identification, and state-wise analysis.
+- The required visualizations are present:
+  - Numeric distributions
+  - Correlation heatmap
+  - Top-10 state bar chart
+- The outputs are saved successfully rather than relying only on interactive display.
+- The project uses `pathlib` for file handling and closes Matplotlib figures after saving.
+- CIA noted that displaying plots interactively is optional because the assignment requires generated output evidence rather than interactive plotting.
+- Additional suggestions such as showing plots with an optional flag and adjusting `tight_layout()` were identified as optional visual/production improvements rather than required corrections.
 
-### Summary of Feedback
+### Action Taken
+The W1D4 deliverables were kept focused on the internship requirements. No unrelated features or production-level changes were added.
 
-- Report dataset dimensions and data types.
-- Check missing values before interpreting distributions.
-- Compare mean and median when discussing skewed variables.
-- Use correlation analysis to identify potentially redundant features.
-- Treat strong correlation as an association rather than evidence of causation.
-- Document suspicious patterns and possible preprocessing requirements.
+---
 
-### Changes Applied
+## Summary
 
-- Documented dataset dimensions and data types.
-- Recorded missing-value results.
-- Compared population mean and median.
-- Documented strong relationships among related demographic variables.
-- Added multicollinearity as an area for future feature-selection work.
-- Added a 200-word EDA narrative.
+The CIA review confirmed that the W1D4 implementation covers the required Exploratory Data Analysis workflow, including dataset inspection, descriptive statistics, missing-value analysis, numeric distributions, correlation analysis, and top-10 state analysis.
+
+The mentor also identified maintainability and visualization improvements, but these were treated as optional because they are not required to complete the W1D4 internship task.
