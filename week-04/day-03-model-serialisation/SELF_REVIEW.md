@@ -12,15 +12,15 @@
 - [x] Original three tests passed before mentor-requested changes.
 - [x] Prediction equivalence was verified in the recorded run.
 - [x] CSV and JSON evidence files were generated.
-- [ ] Run the updated test suite and confirm all four tests pass.
-- [ ] Regenerate and verify final metrics and artifact sizes.
+- [x] Run the updated test suite and confirm all four tests pass.
+- [x] Regenerate and verify final metrics and artifact sizes.
 
 ## Documentation and review
 - [x] Document reproduction commands and serialization risks.
 - [x] Complete the first CIA interaction and review its feedback.
 - [x] Complete the second CIA interaction and review its feedback.
 - [x] Record both actual CIA interactions in docs/CIA_INTERACTIONS.md.
-- [ ] Verify that the interaction log accurately reflects both responses.
+- [x] Verify that the interaction log accurately reflects both responses.
 
 ## Git and pull request
 - [ ] Run git diff --check.
@@ -28,3 +28,4 @@
 - [ ] Commit W4D3 changes.
 - [ ] Push the existing W4 branch.
 - [ ] Verify that the existing pull request contains W4D3.
+
