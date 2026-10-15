@@ -1,0 +1,49 @@
+{
+  "health": {
+    "status_code": 200,
+    "response": {
+      "status": "ok",
+      "model_loaded": true,
+      "model_artifact": "regression_model.joblib"
+    }
+  },
+  "valid_prediction": {
+    "status_code": 200,
+    "response": {
+      "prediction": 107.04399279895685,
+      "model": "w4d3-ridge-regression",
+      "features_received": 10
+    }
+  },
+  "invalid_feature_count": {
+    "status_code": 422,
+    "response": {
+      "detail": [
+        {
+          "type": "too_short",
+          "loc": [
+            "body",
+            "features"
+          ],
+          "msg": "List should have at least 10 items after validation, not 9",
+          "input": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ],
+          "ctx": {
+            "field_type": "List",
+            "min_length": 10,
+            "actual_length": 9
+          }
+        }
+      ]
+    }
+  }
+}
