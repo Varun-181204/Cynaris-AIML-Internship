@@ -1,4 +1,4 @@
-﻿# W4D4 Self-Review Checklist
+# W4D4 Self-Review Checklist
 
 ## Implementation
 - [x] Create FastAPI application.
@@ -19,9 +19,8 @@
 - [ ] Complete and record two CIA mentor interactions.
 
 ## Git workflow
-- [ ] Review code and staged changes.
-- [ ] Make first meaningful W4D4 commit.
-- [ ] Make second meaningful W4D4 commit.
+- [x] Review code and staged changes.
+- [x] Make first meaningful W4D4 commit.
+- [x] Make second meaningful W4D4 commit.
 - [ ] Push the existing W4 branch.
 - [ ] Verify the combined W4D3 + W4D4 pull request.
-
