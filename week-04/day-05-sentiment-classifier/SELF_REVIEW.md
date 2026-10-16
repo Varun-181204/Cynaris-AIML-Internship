@@ -23,10 +23,11 @@
 - [x] Review findings addressed or documented.
 
 ## Git workflow
-- [ ] First meaningful implementation commit created.
-- [ ] Second meaningful evidence/documentation commit created.
-- [ ] Changes pushed to `feat/aiml-W4-Varun-K-S`.
-- [ ] Existing Week 4 PR updated and verified.
+
+- [x] First meaningful implementation commit created.
+- [x] Second meaningful evidence/documentation commit created.
+- [x] Changes pushed to `feat/aiml-W4-Varun-K-S`.
+- [x] Existing Week 4 PR updated and verified.
 
 ## Final verification
 - [x] `git diff --check` passed before committing.
