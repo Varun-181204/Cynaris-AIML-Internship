@@ -1,4 +1,4 @@
-﻿# W4D3 Self-Review Checklist
+# W4D3 Self-Review Checklist
 
 ## Implementation
 - [x] Train a reproducible regression pipeline.
@@ -23,9 +23,9 @@
 - [x] Verify that the interaction log accurately reflects both responses.
 
 ## Git and pull request
-- [ ] Run git diff --check.
-- [ ] Review the final staged changes.
-- [ ] Commit W4D3 changes.
-- [ ] Push the existing W4 branch.
-- [ ] Verify that the existing pull request contains W4D3.
+- [x] Run git diff --check.
+- [x] Review the final staged changes.
+- [x] Commit W4D3 changes.
+- [x] Push the existing W4 branch.
+- [x] Verify that the existing pull request contains W4D3.
 

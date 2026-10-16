@@ -1,4 +1,4 @@
-﻿# W4D4 Self-Review Checklist
+# W4D4 Self-Review Checklist
 
 ## Implementation
 - [x] FastAPI root, health, and prediction endpoints implemented.
@@ -9,10 +9,10 @@
 - [x] Document API contract and error responses.
 
 ## Tests and evidence
-- [ ] All automated tests pass.
-- [ ] Invalid counts, non-numeric values, NaN, and infinities are rejected.
-- [ ] Missing-model behaviour returns HTTP 503.
-- [ ] Evidence regenerated from the final code.
+- [x] All automated tests pass.
+- [x] Invalid counts, non-numeric values, NaN, and infinities are rejected.
+- [x] Missing-model behaviour returns HTTP 503.
+- [x] Evidence regenerated from the final code.
 - [ ] Live Uvicorn endpoints verified.
 
 ## Documentation and mentor review
@@ -22,7 +22,7 @@
 - [ ] Final verification status updated after testing.
 
 ## Git workflow
-- [ ] First meaningful W4D4 implementation commit.
+- [x] First meaningful W4D4 implementation commit.
 - [ ] Second meaningful W4D4 evidence/documentation commit.
-- [ ] Push existing W4 branch.
+- [x] Push existing W4 branch.
 - [ ] Verify combined W4D3 + W4D4 PR.
