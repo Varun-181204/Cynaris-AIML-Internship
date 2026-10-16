@@ -1,26 +1,28 @@
-# W4D4 Self-Review Checklist
+﻿# W4D4 Self-Review Checklist
 
 ## Implementation
-- [x] Create FastAPI application.
-- [x] Reuse the serialized W4D3 regression model.
-- [x] Implement root and health endpoints.
-- [x] Implement prediction endpoint with ten-feature validation.
-- [x] Handle model-loading and prediction failures.
-- [x] Document API usage and security limitations.
+- [x] FastAPI root, health, and prediction endpoints implemented.
+- [x] Reuse W4D3 serialized regression model.
+- [x] Validate exactly ten finite numeric feature values.
+- [x] Handle model loading failure and return HTTP 503 on prediction.
+- [x] Add structured application logging and typed response model.
+- [x] Document API contract and error responses.
 
-## Testing and evidence
-- [x] Run all automated API tests successfully.
-- [x] Verify successful predictions and invalid-input rejection.
-- [x] Generate and inspect JSON evidence.
-- [x] Start Uvicorn and manually verify the live endpoints.
+## Tests and evidence
+- [ ] All automated tests pass.
+- [ ] Invalid counts, non-numeric values, NaN, and infinities are rejected.
+- [ ] Missing-model behaviour returns HTTP 503.
+- [ ] Evidence regenerated from the final code.
+- [ ] Live Uvicorn endpoints verified.
 
 ## Documentation and mentor review
-- [x] Create README with setup, run, and test instructions.
-- [ ] Complete and record two CIA mentor interactions.
+- [x] README documents setup, server startup, request schema, and error codes.
+- [x] First CIA review findings recorded.
+- [x] Second CIA submission-readiness review recorded.
+- [ ] Final verification status updated after testing.
 
 ## Git workflow
-- [x] Review code and staged changes.
-- [x] Make first meaningful W4D4 commit.
-- [x] Make second meaningful W4D4 commit.
-- [ ] Push the existing W4 branch.
-- [ ] Verify the combined W4D3 + W4D4 pull request.
+- [ ] First meaningful W4D4 implementation commit.
+- [ ] Second meaningful W4D4 evidence/documentation commit.
+- [ ] Push existing W4 branch.
+- [ ] Verify combined W4D3 + W4D4 PR.

@@ -15,7 +15,7 @@
       "features_received": 10
     }
   },
-  "invalid_feature_count": {
+  "wrong_feature_count": {
     "status_code": 422,
     "response": {
       "detail": [
@@ -36,12 +36,24 @@
             0.7,
             0.8,
             0.9
+          ]
+        }
+      ]
+    }
+  },
+  "non_numeric_feature": {
+    "status_code": 422,
+    "response": {
+      "detail": [
+        {
+          "type": "float_parsing",
+          "loc": [
+            "body",
+            "features",
+            0
           ],
-          "ctx": {
-            "field_type": "List",
-            "min_length": 10,
-            "actual_length": 9
-          }
+          "msg": "Input should be a valid number, unable to parse string as a number",
+          "input": "invalid"
         }
       ]
     }
