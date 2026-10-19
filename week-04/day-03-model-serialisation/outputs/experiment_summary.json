@@ -1,0 +1,23 @@
+{
+  "task": "Model serialisation with joblib and pickle",
+  "model": "StandardScaler + Ridge(alpha=1.0)",
+  "random_state": 42,
+  "serialization": {
+    "joblib": {
+      "file": "regression_model.joblib",
+      "size_bytes": 1329,
+      "predictions_match": true
+    },
+    "pickle": {
+      "file": "regression_model.pkl",
+      "size_bytes": 1117,
+      "predictions_match": true
+    }
+  },
+  "metrics": {
+    "test_samples": 120,
+    "mae": 13.6799681761259,
+    "rmse": 17.07866682378402,
+    "r2": 0.9743391380936303
+  }
+}

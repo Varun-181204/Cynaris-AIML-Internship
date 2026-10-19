@@ -1,0 +1,18 @@
+[
+  {
+    "model":"Baseline",
+    "accuracy":0.8453033787,
+    "demographic_parity_disparate_impact":0.303968251,
+    "demographic_parity_difference":-0.1779102792,
+    "average_odds_difference":-0.1030134888,
+    "equal_opportunity_difference":-0.1284638524
+  },
+  {
+    "model":"Reweighing",
+    "accuracy":0.8449495843,
+    "demographic_parity_disparate_impact":0.6360625248,
+    "demographic_parity_difference":-0.0756989948,
+    "average_odds_difference":0.0768833807,
+    "equal_opportunity_difference":0.1649257539
+  }
+]

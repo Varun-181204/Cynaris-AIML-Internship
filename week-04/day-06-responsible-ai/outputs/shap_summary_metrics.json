@@ -1,0 +1,11 @@
+{
+  "model": "StandardScaler + LogisticRegression",
+  "dataset": "Synthetic make_classification dataset used by W4D1",
+  "train_samples": 1200,
+  "test_samples": 300,
+  "accuracy_on_this_split": 0.8066666666666666,
+  "features": 20,
+  "shap_background_samples": 100,
+  "shap_explained_samples": 200,
+  "interpretation": "SHAP values explain the fitted model on synthetic data. They do not establish causation or real-world validity."
+}
