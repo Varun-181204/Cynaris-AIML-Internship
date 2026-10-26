@@ -1,0 +1,90 @@
+{
+  "cosine_similarity_search": {
+    "ids": [
+      [
+        "d12",
+        "d14",
+        "d16"
+      ]
+    ],
+    "embeddings": null,
+    "documents": [
+      [
+        "Text embeddings represent semantic meaning as numerical vectors.",
+        "Semantic search retrieves content based on meaning rather than exact keywords.",
+        "Metadata filters restrict vector search results to matching attributes."
+      ]
+    ],
+    "uris": null,
+    "included": [
+      "documents",
+      "metadatas",
+      "distances"
+    ],
+    "data": null,
+    "metadatas": [
+      [
+        {
+          "category": "vectors"
+        },
+        {
+          "category": "search"
+        },
+        {
+          "category": "vector-database"
+        }
+      ]
+    ],
+    "distances": [
+      [
+        0.29029661417007446,
+        0.338858962059021,
+        0.35458457469940186
+      ]
+    ]
+  },
+  "metadata_filtered_search": {
+    "ids": [
+      [
+        "d05",
+        "d06",
+        "d07"
+      ]
+    ],
+    "embeddings": null,
+    "documents": [
+      [
+        "Machine learning models learn patterns from training data.",
+        "Supervised learning uses labelled examples to train predictive models.",
+        "Unsupervised learning discovers structure in unlabelled data."
+      ]
+    ],
+    "uris": null,
+    "included": [
+      "documents",
+      "metadatas",
+      "distances"
+    ],
+    "data": null,
+    "metadatas": [
+      [
+        {
+          "category": "machine-learning"
+        },
+        {
+          "category": "machine-learning"
+        },
+        {
+          "category": "machine-learning"
+        }
+      ]
+    ],
+    "distances": [
+      [
+        0.21017783880233765,
+        0.2764192819595337,
+        0.4089575409889221
+      ]
+    ]
+  }
+}

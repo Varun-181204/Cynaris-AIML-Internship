@@ -1,0 +1,52 @@
+{
+  "indexed_pdf": "vector_databases_guide.pdf",
+  "indexed_chunks": 3,
+  "embedding_model": "nomic-embed-text",
+  "chat_model": "llama3.2:3b",
+  "results": [
+    {
+      "question": "What is a vector database, and how does semantic search use it?",
+      "answer": "According to the document, a vector database is not explicitly defined, but it is mentioned that a vector embedding represents the semantic content of text as a numerical vector (page 1). However, the document does not provide a clear definition of what a vector database is.\n\nRegarding semantic search, the document mentions that cosine similarity compares the direction of vectors (page 1) and that ChromaDB can use cosine distance to retrieve documents whose meanings are similar to a query (page 1). This implies that semantic search uses vector embeddings to compare the direction of vectors and retrieve relevant documents.",
+      "sources": [
+        {
+          "source": "vector_databases_guide.pdf",
+          "page": 1,
+          "distance": 0.22911709547042847
+        },
+        {
+          "source": "vector_databases_guide.pdf",
+          "page": 3,
+          "distance": 0.41031157970428467
+        },
+        {
+          "source": "vector_databases_guide.pdf",
+          "page": 2,
+          "distance": 0.5448120832443237
+        }
+      ],
+      "model": "llama3.2:3b"
+    },
+    {
+      "question": "How does retrieval-augmented generation (RAG) work?",
+      "answer": "According to the document, Retrieval-Augmented Generation (RAG) works by first retrieving relevant document chunks for a user's question. These retrieved chunks are then included as context in a prompt to a language model, which answers using that context. The document states that the model should acknowledge when the context does not contain enough information. (Source: vector_databases_guide.pdf, page 3)",
+      "sources": [
+        {
+          "source": "vector_databases_guide.pdf",
+          "page": 3,
+          "distance": 0.2082318663597107
+        },
+        {
+          "source": "vector_databases_guide.pdf",
+          "page": 1,
+          "distance": 0.3564523458480835
+        },
+        {
+          "source": "vector_databases_guide.pdf",
+          "page": 2,
+          "distance": 0.47213125228881836
+        }
+      ],
+      "model": "llama3.2:3b"
+    }
+  ]
+}

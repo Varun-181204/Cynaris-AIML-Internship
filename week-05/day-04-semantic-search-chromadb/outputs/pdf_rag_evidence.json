@@ -1,0 +1,40 @@
+{
+  "pdf": "vector_databases_guide.pdf",
+  "question": "How does retrieval-augmented generation work?",
+  "chunks_indexed": 3,
+  "retrieved_top_3": [
+    {
+      "text": "Retrieval-Augmented Generation RAG first retrieves relevant document chunks for a user's question. The retrieved chunks are then included as context in a prompt to a language model. The model should answer using that context and acknowledge when the context does not contain enough information. Retrieval improves grounding but does not guarantee truth.",
+      "metadata": {
+        "category": "pdf",
+        "page": 3,
+        "source": "vector_databases_guide.pdf"
+      },
+      "cosine_distance": 0.26241326332092285
+    },
+    {
+      "text": "Vector Databases and Retrieval-Augmented Generation A vector embedding represents the semantic content of text as a numerical vector. An embedding model maps similar meanings to nearby points in vector space. Cosine similarity compares the direction of vectors. ChromaDB can use cosine distance to retrieve documents whose meanings are similar to a query.",
+      "metadata": {
+        "source": "vector_databases_guide.pdf",
+        "category": "pdf",
+        "page": 1
+      },
+      "cosine_distance": 0.33533644676208496
+    },
+    {
+      "text": "Preparing Documents PDF text extraction converts document pages into text that can be searched. Chunking divides long text into smaller passages. Overlapping chunks can preserve context between adjacent passages. Each chunk can store metadata such as source filename and page number to support traceability and filtering.",
+      "metadata": {
+        "page": 2,
+        "category": "pdf",
+        "source": "vector_databases_guide.pdf"
+      },
+      "cosine_distance": 0.4941190481185913
+    }
+  ],
+  "answer": "Retrieval-Augmented Generation (RAG) first retrieves relevant document chunks for a user's question. The retrieved chunks are then included as context in a prompt to a language model. The model should answer using that context and acknowledge when the context does not contain enough information.",
+  "verification": {
+    "three_chunks_retrieved": true,
+    "answer_nonempty": true,
+    "context_included_in_prompt": true
+  }
+}

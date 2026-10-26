@@ -1,0 +1,28 @@
+{
+  "indexed_pdf": "vector_databases_guide.pdf",
+  "indexed_chunks": 3,
+  "embedding_model": "nomic-embed-text",
+  "chat_model": "llama3.2:3b",
+  "result": {
+    "question": "What is a vector database, and how does semantic search use it?",
+    "answer": "According to the document, a vector database is not explicitly defined, but it is mentioned that a vector embedding represents the semantic content of text as a numerical vector (page 1). However, the document does not provide a clear definition of what a vector database is.\n\nIt does mention that ChromaDB can use cosine distance to retrieve documents whose meanings are similar to a query, which implies that a vector database is used for semantic search (page 1).",
+    "sources": [
+      {
+        "source": "vector_databases_guide.pdf",
+        "page": 1,
+        "distance": 0.22911709547042847
+      },
+      {
+        "source": "vector_databases_guide.pdf",
+        "page": 3,
+        "distance": 0.41031157970428467
+      },
+      {
+        "source": "vector_databases_guide.pdf",
+        "page": 2,
+        "distance": 0.5448120832443237
+      }
+    ],
+    "model": "llama3.2:3b"
+  }
+}

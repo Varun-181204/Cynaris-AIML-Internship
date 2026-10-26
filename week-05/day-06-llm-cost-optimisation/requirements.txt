@@ -1,0 +1,5 @@
+tiktoken
+pandas
+openpyxl
+scikit-learn
+pytest

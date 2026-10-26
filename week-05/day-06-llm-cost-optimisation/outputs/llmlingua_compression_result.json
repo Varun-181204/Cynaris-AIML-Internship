@@ -1,0 +1,57 @@
+{
+  "experiment": "W5D6 LLMLingua-2 chunked prompt compression",
+  "timestamp_utc": "2026-10-26T14:24:31.690557+00:00",
+  "compression_model": "microsoft/llmlingua-2-bert-base-multilingual-cased-meetingbank",
+  "rate_requested_per_chunk": 0.4,
+  "chunking": {
+    "measurement_tokenizer": "tiktoken encoding_for_model('gpt-4o')",
+    "chunk_limit_tokens": 350,
+    "chunk_count": 6,
+    "chunk_input_token_counts": [
+      350,
+      350,
+      350,
+      350,
+      350,
+      250
+    ],
+    "largest_chunk_tokens": 350,
+    "note": "The 350-token limit uses GPT-4o tokenization. This is a conservative approximation, not a guarantee of 350 tokens under the model's own tokenizer."
+  },
+  "tokenizer_for_measurement": "tiktoken encoding_for_model('gpt-4o')",
+  "input_tokens": 2000,
+  "compressed_tokens": 776,
+  "measured_token_reduction_pct": 61.2,
+  "measured_token_retention_pct": 38.8,
+  "elapsed_seconds_including_model_load": 7.65,
+  "quality_proxy_before": {
+    "facts_checked": 6,
+    "facts_retained": 6,
+    "retention_pct": 100.0,
+    "fact_checks": {
+      "embeddings represent text numerically": true,
+      "vector databases support similarity search": true,
+      "RAG retrieves relevant chunks before generation": true,
+      "answers should be grounded in source documents": true,
+      "the assistant should admit uncertainty": true,
+      "retrieved passages need relevance checks": true
+    },
+    "method_note": "Heuristic keyword proxy only; it does not prove semantic equivalence or answer quality. Manually review the compressed prompt."
+  },
+  "quality_proxy_after": {
+    "facts_checked": 6,
+    "facts_retained": 4,
+    "retention_pct": 66.67,
+    "fact_checks": {
+      "embeddings represent text numerically": true,
+      "vector databases support similarity search": false,
+      "RAG retrieves relevant chunks before generation": true,
+      "answers should be grounded in source documents": false,
+      "the assistant should admit uncertainty": true,
+      "retrieved passages need relevance checks": true
+    },
+    "method_note": "Heuristic keyword proxy only; it does not prove semantic equivalence or answer quality. Manually review the compressed prompt."
+  },
+  "quality_limitations": "Keyword retention is a lightweight proxy, not a semantic or task-level quality evaluation. Chunk-by-chunk compression can also lose context across chunk boundaries. Compare answers using the same downstream model before making claims about answer quality.",
+  "compressed_prompt": "RAG retrieval - augmented generation answers questions evidence \n. embedding model converts text into numerical \n vectors similarity search. \n retrieval stage finds document chunks passes \n model. divides documents into passages \n preserve context. assistant answer \n cite material check \n passages admit uncertainty evidence. \n retrieval pipeline invent treat passages proof. \n evaluate correctness \n. \n \n answers questions \n. model converts text into \n vectors similarity search. \n stage finds chunks passes \n. \n preserve context. assistant answer \n cite check \n passages admit uncertainty evidence missing. \n invent facts treat passages. \n evaluate correctness \n. \n \n answers questions \n. model converts text into \n vectors similarity search. \n retrieval stage finds document chunks passes\nlanguage \n model before generation. divides documents into manageable passages \n preserve context. assistant answer \n context cite source material check \n passages admit uncertainty. \n retrieval pipeline invent proof. \n reliable evaluate factual correctness \n. \n \n answers questions evidence \n. embedding model converts text into numerical \n vectors supports similarity search. \n retrieval stage finds document \n model. divides documents into manageable passages \n preserve context. assistant answer \n cite check \n admit uncertainty. \n proof. \n factual correctness \n. \n \n answers questions \n. model converts text into \n vectors similarity search. \n retrieval stage finds document chunks language \n model. divides documents into manageable passages \n preserve context. assistant answer \n cite source material check \n passages relevance\nadmit uncertainty when evidence missing. \n retrieval pipeline invent facts passages proof. \n reliable evaluate factual correctness \n. \n \n answers questions \n. embedding model converts text into numerical \n vectors supports similarity search. \n retrieval stage finds chunks passes \n model. divides passages \n preserve context. assistant answer \n cite check \n passages admit uncertainty evidence missing. \n invent treat proof. \n evaluate factual correctness \n. \n \n answers questions \n. converts text into numerical \n vectors similarity search. \n stage finds chunks passes \n model. \n preserve context. assistant answer \n cite check \n passages admit uncertainty evidence missing. \n invent facts treat passages proof. \n reliable evaluate factual correctness \n. \n \n RAG retrieval -\nmented generation answers questions evidence \n. embedding model converts text into numerical \n vectors similarity search. \n retrieval stage finds document chunks passes \n model. divides documents passages \n preserve context. assistant answer \n cite material check \n passages admit uncertainty evidence missing. \n pipeline invent treat irrelevant passages proof. \n evaluate factual correctness \n. \n \n answers questions \n. converts text \n vectors similarity search. \n finds chunks passes \n. divides documents \n preserve context. assistant answer \n cite source material check \n passages admit uncertainty missing. \n invent facts treat passages proof. \n evaluate factual correctness \n. \n \n answers questions \n. model converts text into numerical \n vectors similarity search. \n stage finds document chunks passes language \n model\n. Chunking divides documents into manageable passages \n preserve context. assistant answer \n cite material check \n passages admit uncertainty. \n retrieval pipeline invent treat. \n reliable evaluate factual correctness \n. \n \n RAG answers questions using evidence \n. embedding model converts text into \n vectors database supports similarity search. \n retrieval stage finds document chunks passes \n model. divides documents into passages \n preserve context. assistant answer \n cite check \n passages admit uncertainty missing. \n pipeline. \n correctness \n. \n \n answers questions evidence \n. embedding model converts text into \n vectors similarity search. \n retrieval stage finds chunks \n. divides documents into manageable passages \n preserve context. assistant answer \n cite check \n passages admit uncertainty evidence\n. \n retrieval pipeline invent facts proof. \n evaluate factual correctness \n. \n \n RAG answers questions \n. embedding model converts text into numerical \n vectors supports similarity search. \n finds chunks passes \n model. divides documents manageable passages \n preserve context. assistant answer \n cite source material check \n passages admit uncertainty evidence. \n retrieval pipeline invent facts treat passages proof. \n evaluate factual correctness \n. \n \n answers \n. converts text into numerical \n vectors similarity search. \n finds document chunks passes \n model."
+}
