@@ -1,0 +1,15 @@
+{
+  "embedding_model": "nomic-embed-text",
+  "cache_threshold": 0.92,
+  "qa_pairs_loaded": 20,
+  "matching_query": "What is machine learning?",
+  "matching_query_result": {
+    "question": "What is machine learning?",
+    "answer": "Machine learning enables systems to learn patterns from data.",
+    "similarity": 1.0000000000000004
+  },
+  "unrelated_query": "How do I bake a chocolate cake?",
+  "unrelated_query_result": null,
+  "elapsed_seconds": 45.989,
+  "note": "Cache hit/miss outcomes depend on the actual embedding model. Similarity scores and cache behavior are measured, not assumed."
+}
