@@ -1,0 +1,47 @@
+{
+    "task": "W6D2 LangChain Fundamentals",
+    "model": "qwen2.5:3b",
+    "architecture": "PromptTemplate -> ChatOllama -> StrOutputParser",
+    "total_tests": 5,
+    "successful_tests": 5,
+    "failed_tests": 0,
+    "average_latency_seconds": 7.815,
+    "generated_at_utc": "2026-11-02T12:58:48.802393+00:00",
+    "results": [
+        {
+            "test_number": 1,
+            "question": "Explain the difference between supervised and unsupervised learning.",
+            "response": "Supervised learning uses labeled data to train models, while unsupervised learning uses unlabeled data to find patterns. For example, in supervised learning, you might train a model to predict house prices based on features like size and location using data with known prices. In unsupervised learning, you could group houses into similar neighborhoods without any pre-assigned labels.",
+            "latency_seconds": 14.614,
+            "status": "success"
+        },
+        {
+            "test_number": 2,
+            "question": "What is overfitting in machine learning?",
+            "response": "Overfitting happens when a machine learning model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new, unseen data. It's like memorizing the words of a poem by heart instead of understanding the meaning, so you can't recite it to a new friend.",
+            "latency_seconds": 5.919,
+            "status": "success"
+        },
+        {
+            "test_number": 3,
+            "question": "Why do we split data into training and testing sets?",
+            "response": "We split data into training and testing sets to evaluate how well our machine learning models generalize to new, unseen data. This helps us understand if our model is overfitting to the training data. For example, if you're building a model to predict house prices, you use most of the data for training and a small part for testing to see how well it predicts new house prices.",
+            "latency_seconds": 7.274,
+            "status": "success"
+        },
+        {
+            "test_number": 4,
+            "question": "Explain the purpose of a vector database in AI applications.",
+            "response": "A vector database stores and retrieves data based on numerical vectors that represent the data. This is useful for tasks like search and recommendation systems where it helps find similar items or content. For example, in a movie recommendation system, a vector database can quickly find movies similar to what a user has watched by comparing their vector representations.",
+            "latency_seconds": 6.005,
+            "status": "success"
+        },
+        {
+            "test_number": 5,
+            "question": "What is retrieval augmented generation (RAG)?",
+            "response": "RAG is a technique that combines retrieval and generation to find and use relevant information from a database while generating a response. For example, if you ask about a historical event, RAG can search a database for relevant facts and then generate a detailed answer.",
+            "latency_seconds": 5.263,
+            "status": "success"
+        }
+    ]
+}
