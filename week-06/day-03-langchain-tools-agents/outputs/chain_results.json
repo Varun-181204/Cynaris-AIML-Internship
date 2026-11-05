@@ -1,0 +1,47 @@
+{
+    "task": "W6D3 LangChain Basic Chain",
+    "model": "llama3.2:3b",
+    "chain": "PromptTemplate -> ChatOllama -> StrOutputParser",
+    "total_inputs": 5,
+    "successful_inputs": 5,
+    "failed_inputs": 0,
+    "average_latency_seconds": 9.196,
+    "timestamp_utc": "2026-11-04T04:13:12.333001+00:00",
+    "results": [
+        {
+            "test_id": 1,
+            "question": "Explain the difference between supervised and unsupervised learning.",
+            "answer": "In machine learning, supervised learning involves training a model on labeled data, where the correct output is already known. The model learns to map inputs to outputs based on the labeled data, allowing it to make predictions on new, unseen data. In contrast, unsupervised learning involves training a model on unlabeled data, where the model must identify patterns or structure in the data on its own. This type of learning is often used for clustering, dimensionality reduction, and anomaly detection.",
+            "success": true,
+            "latency_seconds": 16.405
+        },
+        {
+            "test_id": 2,
+            "question": "What is overfitting in machine learning?",
+            "answer": "Overfitting in machine learning occurs when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data. This happens when the model is too specialized to the training data and fails to generalize well to other data. As a result, the model's performance on the training data is artificially high, while its performance on new data is low.",
+            "success": true,
+            "latency_seconds": 5.654
+        },
+        {
+            "test_id": 3,
+            "question": "Why do we split a dataset into training and testing sets?",
+            "answer": "We split a dataset into training and testing sets to evaluate the performance of a machine learning model. The training set is used to train the model, allowing it to learn from the data and make predictions. The testing set is used to test the model's performance on unseen data, providing an unbiased estimate of its accuracy and helping to prevent overfitting. This split allows for a more accurate assessment of the model's generalizability and reliability.",
+            "success": true,
+            "latency_seconds": 8.272
+        },
+        {
+            "test_id": 4,
+            "question": "What is the purpose of a vector database?",
+            "answer": "A vector database is designed to efficiently store, manage, and query large amounts of dense vector data, typically used in applications such as recommendation systems, image search, and natural language processing. Its primary purpose is to enable fast and scalable similarity searches between vectors, allowing for efficient retrieval of relevant data. This is achieved through optimized data structures and indexing techniques, enabling fast query performance.",
+            "success": true,
+            "latency_seconds": 6.783
+        },
+        {
+            "test_id": 5,
+            "question": "Explain Retrieval-Augmented Generation (RAG).",
+            "answer": "Retrieval-Augmented Generation (RAG) is a text generation technique that combines the strengths of retrieval-based models and generation-based models. It involves first retrieving relevant documents or passages from a large corpus to inform the generation process, and then using the retrieved information to generate new text. This approach leverages the strengths of both retrieval and generation models, allowing for more accurate and coherent text generation. RAG has been shown to outperform traditional generation models in various tasks, such as question answering and text summarization.",
+            "success": true,
+            "latency_seconds": 8.867
+        }
+    ]
+}
