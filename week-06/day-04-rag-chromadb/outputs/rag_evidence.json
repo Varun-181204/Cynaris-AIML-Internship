@@ -1,0 +1,93 @@
+{
+  "collection": "w6d4_rag",
+  "distance_metric": "cosine",
+  "embedding_model": "nomic-embed-text",
+  "embedding_dimensions": 768,
+  "sample_documents_added": 20,
+  "sample_search_results": [
+    {
+      "id": "sample-03",
+      "document": "Cosine similarity compares vector direction and is commonly used for semantic retrieval.",
+      "metadata": {
+        "source": "cosine-search",
+        "category": "similarity"
+      },
+      "cosine_distance": 0.12075686454772949
+    },
+    {
+      "id": "sample-04",
+      "document": "ChromaDB is an open-source vector database that stores embeddings and metadata.",
+      "metadata": {
+        "category": "vector-db",
+        "source": "chromadb"
+      },
+      "cosine_distance": 0.4600498676300049
+    },
+    {
+      "id": "sample-01",
+      "document": "RAG combines retrieval with generation to ground model answers in external knowledge.",
+      "metadata": {
+        "source": "rag-basics",
+        "category": "rag"
+      },
+      "cosine_distance": 0.46567636728286743
+    }
+  ],
+  "metadata_filtered_results": [
+    {
+      "id": "sample-07",
+      "document": "Top-k retrieval returns the k most relevant records for a query.",
+      "metadata": {
+        "source": "top-k",
+        "category": "retrieval"
+      },
+      "cosine_distance": 0.38226842880249023
+    },
+    {
+      "id": "sample-06",
+      "document": "Metadata filtering narrows retrieval to records matching structured conditions.",
+      "metadata": {
+        "category": "retrieval",
+        "source": "metadata-filter"
+      },
+      "cosine_distance": 0.3964892625808716
+    }
+  ],
+  "pdf": "C:\\Users\\HP\\OneDrive\\Documents\\Cynaris-AIML-Internship\\week-06\\day-04-rag-chromadb\\data\\Module-3-PE.pdf",
+  "pdf_chunks_added": 28,
+  "pdf_top_3_retrieval": [
+    {
+      "id": "pdf-Module-3-PE-0011",
+      "document": "Goal: Responsible AI helps make AI systems safe, trustworthy, fair, and accountable. \n \nQ15. Define generative AI guardrails. Explain input, output, retrieval, and human \nguardrails. \nGenerative AI guardrails are rules and controls used to prevent an AI system from producing \nharmful, unsafe, incorrect, or inappropriate results.",
+      "metadata": {
+        "category": "pdf",
+        "source": "Module-3-PE.pdf",
+        "page": "4"
+      },
+      "cosine_distance": 0.17428946495056152
+    },
+    {
+      "id": "pdf-Module-3-PE-0012",
+      "document": "1. Input Guardrails: Check user input before sending it to the AI. \nExample: Detect harmful or inappropriate requests.  \n2. Output Guardrails: Check the AI's response before showing it to the user. \nExample: Block offensive or unsafe content.  \n3. Retrieval Guardrails: Control which documents or information the AI can access. \nExample: Allow a college chatbot to retrieve only official college documents.  \n4. Human Guardrails: A human reviews important or risky AI outputs. \nExample: A doctor reviews an AI-generated medical recommendation.  \n \nQ16. Why is human review important in high-stakes generative AI applications?",
+      "metadata": {
+        "category": "pdf",
+        "page": "5",
+        "source": "Module-3-PE.pdf"
+      },
+      "cosine_distance": 0.2169591784477234
+    },
+    {
+      "id": "pdf-Module-3-PE-0021",
+      "document": "Guardrails are safety controls that prevent an AI system from giving harmful or incorrect \nresults. \nWorkflow \nUser Input \n    ↓ \nInput Check \n    ↓ \nAI Model \n    ↓ \nOutput Check \n    ↓ \nHuman Review \n    ↓ \nFinal Answer \n    ↓ \nMonitoring \n1. Pre-processing \nCheck the input before sending it to AI. \nExample: Block harmful requests. \n2. Model Configuration \nGive the AI proper instructions and restrict access to sensitive information. \n3. Post-processing \nCheck the AI's answer before showing it. \nExample: Remove harmful or private information. \n4. Human Review \nA human checks important or high-risk answers. \nExample: A doctor checks an AI medical answer. \n5. Monitoring \nContinuously check:",
+      "metadata": {
+        "page": "9",
+        "source": "Module-3-PE.pdf",
+        "category": "pdf"
+      },
+      "cosine_distance": 0.225050151348114
+    }
+  ],
+  "question": "What are the four types of generative AI guardrails, and what does each one do?",
+  "answer": "The four types of generative AI guardrails are:\n\n1. **Input Guardrails**: Check user input before sending it to the AI. Example: Detect harmful or inappropriate requests.\n2. **Output Guardrails**: Check the AI's response before showing it to the user. Example: Block offensive or unsafe content.\n3. **Retrieval Guardrails**: Control which documents or information the AI can access. Example: Allow a college chatbot to retrieve only official college documents.\n4. **Human Guardrails**: A human reviews important or risky AI outputs. Example: A doctor reviews an AI-generated medical recommendation.",
+  "total_collection_count": 48
+}
