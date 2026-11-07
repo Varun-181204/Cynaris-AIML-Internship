@@ -1,0 +1,55 @@
+{
+    "task": "W6D2 Conversation Memory",
+    "model": "qwen2.5:3b",
+    "memory_type": "ConversationBufferMemory",
+    "total_turns": 5,
+    "successful_turns": 5,
+    "expected_messages": 10,
+    "retained_messages": 10,
+    "all_user_inputs_retained": true,
+    "history_verified": true,
+    "generated_at_utc": "2026-11-02T13:02:01.604631+00:00",
+    "final_history": "Human: I am developing a college project called CampusCart.\nAI: Sure! I can help with information related to your CampusCart project. If you have any specific questions about it, feel free to ask.\nHuman: The project uses Python and FastAPI for its backend.\nAI: Sure! If you have any questions about CampusCart or the technologies you're using, feel free to ask. Whether it's Python, FastAPI, or anything related to your project, I'm here to help.\nHuman: I have selected PostgreSQL as the database.\nAI: Great choice! PostgreSQL is a robust database option. If you have any questions about using PostgreSQL or need advice on integrating it with your FastAPI backend, feel free to ask.\nHuman: I plan to deploy the application using Render.\nAI: Sure! If you have any questions about deploying your CampusCart project using Render or need advice on integrating PostgreSQL with FastAPI, feel free to ask.\nHuman: Summarize the project name, backend technology, database, and deployment platform.\nAI: Project Name: CampusCart  \nBackend Technology: Python and FastAPI  \nDatabase: PostgreSQL  \nDeployment Platform: Render  \n\nIf you have any more questions or need further assistance, feel free to ask!",
+    "results": [
+        {
+            "turn": 1,
+            "user_input": "I am developing a college project called CampusCart.",
+            "assistant_response": "Sure! I can help with information related to your CampusCart project. If you have any specific questions about it, feel free to ask.",
+            "history_before_turn": "",
+            "latency_seconds": 7.128,
+            "status": "success"
+        },
+        {
+            "turn": 2,
+            "user_input": "The project uses Python and FastAPI for its backend.",
+            "assistant_response": "Sure! If you have any questions about CampusCart or the technologies you're using, feel free to ask. Whether it's Python, FastAPI, or anything related to your project, I'm here to help.",
+            "history_before_turn": "Human: I am developing a college project called CampusCart.\nAI: Sure! I can help with information related to your CampusCart project. If you have any specific questions about it, feel free to ask.",
+            "latency_seconds": 5.122,
+            "status": "success"
+        },
+        {
+            "turn": 3,
+            "user_input": "I have selected PostgreSQL as the database.",
+            "assistant_response": "Great choice! PostgreSQL is a robust database option. If you have any questions about using PostgreSQL or need advice on integrating it with your FastAPI backend, feel free to ask.",
+            "history_before_turn": "Human: I am developing a college project called CampusCart.\nAI: Sure! I can help with information related to your CampusCart project. If you have any specific questions about it, feel free to ask.\nHuman: The project uses Python and FastAPI for its backend.\nAI: Sure! If you have any questions about CampusCart or the technologies you're using, feel free to ask. Whether it's Python, FastAPI, or anything related to your project, I'm here to help.",
+            "latency_seconds": 4.405,
+            "status": "success"
+        },
+        {
+            "turn": 4,
+            "user_input": "I plan to deploy the application using Render.",
+            "assistant_response": "Sure! If you have any questions about deploying your CampusCart project using Render or need advice on integrating PostgreSQL with FastAPI, feel free to ask.",
+            "history_before_turn": "Human: I am developing a college project called CampusCart.\nAI: Sure! I can help with information related to your CampusCart project. If you have any specific questions about it, feel free to ask.\nHuman: The project uses Python and FastAPI for its backend.\nAI: Sure! If you have any questions about CampusCart or the technologies you're using, feel free to ask. Whether it's Python, FastAPI, or anything related to your project, I'm here to help.\nHuman: I have selected PostgreSQL as the database.\nAI: Great choice! PostgreSQL is a robust database option. If you have any questions about using PostgreSQL or need advice on integrating it with your FastAPI backend, feel free to ask.",
+            "latency_seconds": 4.902,
+            "status": "success"
+        },
+        {
+            "turn": 5,
+            "user_input": "Summarize the project name, backend technology, database, and deployment platform.",
+            "assistant_response": "Project Name: CampusCart  \nBackend Technology: Python and FastAPI  \nDatabase: PostgreSQL  \nDeployment Platform: Render  \n\nIf you have any more questions or need further assistance, feel free to ask!",
+            "history_before_turn": "Human: I am developing a college project called CampusCart.\nAI: Sure! I can help with information related to your CampusCart project. If you have any specific questions about it, feel free to ask.\nHuman: The project uses Python and FastAPI for its backend.\nAI: Sure! If you have any questions about CampusCart or the technologies you're using, feel free to ask. Whether it's Python, FastAPI, or anything related to your project, I'm here to help.\nHuman: I have selected PostgreSQL as the database.\nAI: Great choice! PostgreSQL is a robust database option. If you have any questions about using PostgreSQL or need advice on integrating it with your FastAPI backend, feel free to ask.\nHuman: I plan to deploy the application using Render.\nAI: Sure! If you have any questions about deploying your CampusCart project using Render or need advice on integrating PostgreSQL with FastAPI, feel free to ask.",
+            "latency_seconds": 5.939,
+            "status": "success"
+        }
+    ]
+}

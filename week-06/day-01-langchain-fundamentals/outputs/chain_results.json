@@ -1,0 +1,46 @@
+{
+    "experiment": "W6D1 LangChain Basic Chain",
+    "model": "llama3.2:3b",
+    "architecture": [
+        "PromptTemplate",
+        "ChatOllama",
+        "StrOutputParser"
+    ],
+    "total_tests": 5,
+    "successful_tests": 5,
+    "failed_tests": 0,
+    "average_latency_seconds": 12.859,
+    "generated_at_utc": "2026-10-31T22:57:43.167751+00:00",
+    "results": [
+        {
+            "topic": "What is machine learning?",
+            "response": "Machine learning is a way for computers to learn and get better at doing tasks on their own. It's like teaching a child to recognize objects. You show them many pictures of cats and dogs, and they learn to tell the difference between them.\n\nFor example, imagine you have a self-service kiosk that needs to recognize faces. You show it many pictures of people, and it learns to identify who's a customer and who's not. The more pictures it sees, the better it gets at recognizing faces. This way, the kiosk can make decisions on its own without needing human help.",
+            "latency_seconds": 16.955,
+            "success": true
+        },
+        {
+            "topic": "What is LangChain?",
+            "response": "LangChain is an open-source framework that helps build and integrate AI and machine learning (ML) models with external data sources. It provides a simple and efficient way to connect AI models to data, APIs, and other services. LangChain acts as a \"bridge\" between AI models and external data, allowing developers to easily integrate AI models into their applications.\n\nExample: Imagine you're building a chatbot that needs to access customer data from a CRM system. With LangChain, you can easily connect your chatbot to the CRM system, retrieve customer data, and use it to improve your chatbot's responses.",
+            "latency_seconds": 12.511,
+            "success": true
+        },
+        {
+            "topic": "What is a prompt template?",
+            "response": "A prompt template is a pre-written structure that helps you create a clear and concise question or instruction for a machine learning model, such as a language model or chatbot. It provides a framework for the model to understand what you want it to do or respond with.\n\nExample: \"Write a short story about a character who [insert action or goal].\"\n\nThis template helps the model focus on the main task and provides a clear direction for the response. It's like a recipe for the model to follow, ensuring it produces a relevant and accurate answer.",
+            "latency_seconds": 11.888,
+            "success": true
+        },
+        {
+            "topic": "What is an LLM?",
+            "response": "A Beginner's Guide to LLMs\n\nAn LLM (Large Language Model) is a type of artificial intelligence (AI) that can understand and generate human-like language. It's trained on vast amounts of text data, allowing it to learn patterns and relationships in language. LLMs can be used for various tasks, such as:\n\n* Answering questions\n* Generating text\n* Translation\n\nExample: Google's BERT (Bidirectional Encoder Representations from Transformers) is a popular LLM. It's used to improve language understanding in search results, helping users find relevant answers to their questions.",
+            "latency_seconds": 12.584,
+            "success": true
+        },
+        {
+            "topic": "What is an output parser?",
+            "response": "A beginner's guide to output parsers!\n\nAn output parser is a tool that helps extract specific information from a text or data output. It takes the output as input and breaks it down into smaller, meaningful parts. Think of it like a filter that separates the useful information from the rest.\n\nExample: Imagine you receive a text report with a list of sales figures. An output parser can help extract the total sales amount, the number of sales, and the date range, making it easier to understand and analyze the data.",
+            "latency_seconds": 10.357,
+            "success": true
+        }
+    ]
+}

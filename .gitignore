@@ -7,3 +7,7 @@ __pycache__/
 
 # Python bytecode caches
 **/__pycache__/
+
+# W6D4 generated ChromaDB persistence
+week-06/day-04-rag-chromadb/data/chroma_db/
+/week-06/day-05-document-chatbot/data/chroma_db/
