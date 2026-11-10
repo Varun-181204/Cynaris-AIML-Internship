@@ -1,0 +1,352 @@
+{
+    "assignment": "Cynaris W7D1 - Haystack Pipeline Architecture",
+    "haystack_version": "3.5.0",
+    "embedding_model": "nomic-embed-text",
+    "pdf_count": 5,
+    "indexed_chunks": 22,
+    "top_k": 3,
+    "evaluation_method": "Source-level relevance judgments with top-K results deduplicated by PDF filename. Precision@3 uses a fixed denominator of 3. These are proxy judgments, not independent passage-level annotations.",
+    "comparison": {
+        "bm25_precision_at_3": 0.3333,
+        "dense_precision_at_3": 0.3333,
+        "difference": 0.0,
+        "higher_precision": "Tie"
+    },
+    "results": {
+        "bm25": {
+            "queries": [
+                {
+                    "question_id": 1,
+                    "question": "How are components connected in a Haystack pipeline?",
+                    "expected_sources": [
+                        "haystack_pipeline_architecture.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "haystack_pipeline_architecture.pdf",
+                        "responsible_ai_model_card.pdf",
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 28.66,
+                    "reader_answer": "Pipeline Architecture\nA Haystack pipeline connects independent components through named inputs and outputs.",
+                    "reader_source": "haystack_pipeline_architecture.pdf"
+                },
+                {
+                    "question_id": 2,
+                    "question": "What is the role of a document store in a RAG workflow?",
+                    "expected_sources": [
+                        "haystack_pipeline_architecture.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "haystack_pipeline_architecture.pdf",
+                        "vector_databases_guide.pdf",
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 1.45,
+                    "reader_answer": "Retrieval-Augmented Generation\nA typical RAG workflow converts source documents, indexes them, retrieves relevant passages for a user\nquery and passes the retrieved context to a language model.",
+                    "reader_source": "haystack_pipeline_architecture.pdf"
+                },
+                {
+                    "question_id": 3,
+                    "question": "How does BM25 calculate document relevance?",
+                    "expected_sources": [
+                        "retrieval_methods_and_evaluation.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "retrieval_methods_and_evaluation.pdf",
+                        "prompt_engineering.pdf",
+                        "vector_databases_guide.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 1.26,
+                    "reader_answer": "BM25 Retrieval\nBM25 is a sparse lexical ranking algorithm based on term frequency, inverse document frequency and\ndocument length normalization.",
+                    "reader_source": "retrieval_methods_and_evaluation.pdf"
+                },
+                {
+                    "question_id": 4,
+                    "question": "How does dense retrieval use embeddings to find documents?",
+                    "expected_sources": [
+                        "retrieval_methods_and_evaluation.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "retrieval_methods_and_evaluation.pdf",
+                        "vector_databases_guide.pdf",
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 1.0,
+                    "reader_answer": "Dense Retrieval\nDense retrieval converts documents and queries into numeric embedding vectors.",
+                    "reader_source": "retrieval_methods_and_evaluation.pdf"
+                },
+                {
+                    "question_id": 5,
+                    "question": "What is few-shot prompting and how does it guide an LLM?",
+                    "expected_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 1.33,
+                    "reader_answer": "Explain few-shot prompting, system instructions, and structured output prompting.",
+                    "reader_source": "prompt_engineering.pdf"
+                },
+                {
+                    "question_id": 6,
+                    "question": "What makes an effective prompt for a language model?",
+                    "expected_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 1.13,
+                    "reader_answer": "Example: \nA text model generates an article from a text prompt, while a multimodal model can analyze \nan image and explain what is present in it.",
+                    "reader_source": "prompt_engineering.pdf"
+                },
+                {
+                    "question_id": 7,
+                    "question": "What information does a model card provide about a machine learning model?",
+                    "expected_sources": [
+                        "responsible_ai_model_card.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "prompt_engineering.pdf",
+                        "responsible_ai_model_card.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 1.0,
+                    "reader_answer": "Privacy leakage: Poorly generated synthetic data may still reveal information about \nreal people.",
+                    "reader_source": "prompt_engineering.pdf"
+                },
+                {
+                    "question_id": 8,
+                    "question": "Why should model limitations and intended use be documented?",
+                    "expected_sources": [
+                        "responsible_ai_model_card.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "responsible_ai_model_card.pdf",
+                        "retrieval_methods_and_evaluation.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 0.89,
+                    "reader_answer": "Monitoring and future work\nFuture work should use a documented, representative dataset, assess subgroup performance where\nappropriate protected attributes are available, conduct independent reviews, monitor performance over time,\nretain human oversight, and provide a way to challenge or correct harmful decisions.",
+                    "reader_source": "responsible_ai_model_card.pdf"
+                },
+                {
+                    "question_id": 9,
+                    "question": "What is a vector database and how does it store information?",
+                    "expected_sources": [
+                        "vector_databases_guide.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "vector_databases_guide.pdf",
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 0.96,
+                    "reader_answer": "Vector Databases and Retrieval-Augmented Generation\nA vector embedding represents the semantic content of text as a numerical vector.",
+                    "reader_source": "vector_databases_guide.pdf"
+                },
+                {
+                    "question_id": 10,
+                    "question": "How does similarity search find related vectors?",
+                    "expected_sources": [
+                        "vector_databases_guide.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "retrieval_methods_and_evaluation.pdf",
+                        "vector_databases_guide.pdf",
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 1.07,
+                    "reader_answer": "Texts with related meanings may have nearby vectors,\neven when they do not share the same exact words.",
+                    "reader_source": "retrieval_methods_and_evaluation.pdf"
+                }
+            ],
+            "mean_precision_at_3": 0.3333,
+            "mean_latency_ms": 3.88
+        },
+        "dense": {
+            "queries": [
+                {
+                    "question_id": 1,
+                    "question": "How are components connected in a Haystack pipeline?",
+                    "expected_sources": [
+                        "haystack_pipeline_architecture.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "haystack_pipeline_architecture.pdf",
+                        "vector_databases_guide.pdf",
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 49.13,
+                    "reader_answer": "Pipeline Architecture\nA Haystack pipeline connects independent components through named inputs and outputs.",
+                    "reader_source": "haystack_pipeline_architecture.pdf"
+                },
+                {
+                    "question_id": 2,
+                    "question": "What is the role of a document store in a RAG workflow?",
+                    "expected_sources": [
+                        "haystack_pipeline_architecture.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "vector_databases_guide.pdf",
+                        "haystack_pipeline_architecture.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 55.5,
+                    "reader_answer": "Vector Databases and Retrieval-Augmented Generation\nA vector embedding represents the semantic content of text as a numerical vector.",
+                    "reader_source": "vector_databases_guide.pdf"
+                },
+                {
+                    "question_id": 3,
+                    "question": "How does BM25 calculate document relevance?",
+                    "expected_sources": [
+                        "retrieval_methods_and_evaluation.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "retrieval_methods_and_evaluation.pdf",
+                        "vector_databases_guide.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 48.93,
+                    "reader_answer": "BM25 Retrieval\nBM25 is a sparse lexical ranking algorithm based on term frequency, inverse document frequency and\ndocument length normalization.",
+                    "reader_source": "retrieval_methods_and_evaluation.pdf"
+                },
+                {
+                    "question_id": 4,
+                    "question": "How does dense retrieval use embeddings to find documents?",
+                    "expected_sources": [
+                        "retrieval_methods_and_evaluation.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "retrieval_methods_and_evaluation.pdf",
+                        "vector_databases_guide.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 47.48,
+                    "reader_answer": "Dense Retrieval\nDense retrieval converts documents and queries into numeric embedding vectors.",
+                    "reader_source": "retrieval_methods_and_evaluation.pdf"
+                },
+                {
+                    "question_id": 5,
+                    "question": "What is few-shot prompting and how does it guide an LLM?",
+                    "expected_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 51.64,
+                    "reader_answer": "Which risk means an LLM produces fluent but unsupported information?",
+                    "reader_source": "prompt_engineering.pdf"
+                },
+                {
+                    "question_id": 6,
+                    "question": "What makes an effective prompt for a language model?",
+                    "expected_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 68.64,
+                    "reader_answer": "Prompt Templates: Use a fixed format for repeated tasks.",
+                    "reader_source": "prompt_engineering.pdf"
+                },
+                {
+                    "question_id": 7,
+                    "question": "What information does a model card provide about a machine learning model?",
+                    "expected_sources": [
+                        "responsible_ai_model_card.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "responsible_ai_model_card.pdf",
+                        "prompt_engineering.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 49.76,
+                    "reader_answer": "Model Card: W4D1 Binary Classification Model\n1.",
+                    "reader_source": "responsible_ai_model_card.pdf"
+                },
+                {
+                    "question_id": 8,
+                    "question": "Why should model limitations and intended use be documented?",
+                    "expected_sources": [
+                        "responsible_ai_model_card.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "prompt_engineering.pdf",
+                        "responsible_ai_model_card.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 45.62,
+                    "reader_answer": "Example: \nA text model generates an article from a text prompt, while a multimodal model can analyze \nan image and explain what is present in it.",
+                    "reader_source": "prompt_engineering.pdf"
+                },
+                {
+                    "question_id": 9,
+                    "question": "What is a vector database and how does it store information?",
+                    "expected_sources": [
+                        "vector_databases_guide.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "vector_databases_guide.pdf",
+                        "retrieval_methods_and_evaluation.pdf",
+                        "haystack_pipeline_architecture.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 50.17,
+                    "reader_answer": "Vector Databases and Retrieval-Augmented Generation\nA vector embedding represents the semantic content of text as a numerical vector.",
+                    "reader_source": "vector_databases_guide.pdf"
+                },
+                {
+                    "question_id": 10,
+                    "question": "How does similarity search find related vectors?",
+                    "expected_sources": [
+                        "vector_databases_guide.pdf"
+                    ],
+                    "retrieved_sources": [
+                        "vector_databases_guide.pdf",
+                        "retrieval_methods_and_evaluation.pdf"
+                    ],
+                    "relevant_hits": 1,
+                    "precision_at_3": 0.3333,
+                    "latency_ms": 46.01,
+                    "reader_answer": "Cosine similarity compares the direction of vectors.",
+                    "reader_source": "vector_databases_guide.pdf"
+                }
+            ],
+            "mean_precision_at_3": 0.3333,
+            "mean_latency_ms": 51.29
+        }
+    }
+}
