@@ -1,0 +1,18 @@
+{
+    "timestamp": "2026-11-20T16:34:45.836829+00:00",
+    "question": "What is retrieval-augmented generation and how does it work?",
+    "answer": "According to the context, Retrieval-Augmented Generation (RAG) is a system that combines information retrieval with language generation. It works by retrieving relevant passages from an external knowledge source and supplying them as context to a language model, which then generates an answer using the retrieved context.",
+    "sources": [
+        "rag_fundamentals.txt",
+        "evaluation.txt",
+        "llamaindex.txt"
+    ],
+    "retrieved_contexts": [
+        "﻿Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant passages from an external knowledge source and supplies them as context to a language model. The model then generates an answer using the retrieved context. A basic RAG pipeline includes document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation. RAG can improve factual grounding, provide access to updated information, and reduce unsupported answers, but its quality depends on the source data and retrieval performance.",
+        "﻿Retrieval evaluation measures how effectively a system finds relevant source passages. Precision at k is the fraction of the top k retrieved results that are relevant. Recall at k is the fraction of all known relevant items that appear among the top k results. End-to-end query latency measures the time taken to produce a response, including retrieval and language-model generation when both are part of the measured operation. A fair comparison should use the same questions, documents, embedding model, language model, and retrieval settings. A small evaluation dataset provides useful evidence but does not establish general performance.",
+        "﻿LlamaIndex is a data framework for building applications powered by large language models. It connects private or domain-specific data to LLMs through data connectors, indexes, retrievers, query engines, and response synthesis. A typical workflow loads documents, transforms them into nodes, creates an index, retrieves relevant nodes, and generates a grounded response. VectorStoreIndex is a commonly used index that stores vector representations of document chunks and retrieves semantically relevant content."
+    ],
+    "metric": "Ragas Faithfulness",
+    "faithfulness_score": 1.0,
+    "evaluator_model": "llama3.2:3b"
+}

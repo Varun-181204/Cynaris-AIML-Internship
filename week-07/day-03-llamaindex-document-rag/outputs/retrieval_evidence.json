@@ -1,0 +1,252 @@
+{
+  "project": "W7D3 LlamaIndex Document Indexing and Querying",
+  "models": {
+    "embedding": "nomic-embed-text:latest",
+    "llm": "qwen2.5:3b"
+  },
+  "source_document_count": 5,
+  "chunk_size": 512,
+  "chunk_overlap": 50,
+  "similarity_top_k": 2,
+  "timing_method": "End-to-end query latency measured with time.perf_counter; both engines warmed up before the measured questions.",
+  "in_memory": {
+    "engine": "in_memory",
+    "query_count": 10,
+    "mean_latency_ms": 19133.34,
+    "median_latency_ms": 18895.56,
+    "p95_latency_ms": 26065.06,
+    "stdev_latency_ms": 5241.97,
+    "results": [
+      {
+        "question": "What is LlamaIndex used for?",
+        "expected_source": "llamaindex.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "LlamaIndex is used as a data framework for building applications that leverage large language models. It connects private or domain-specific data to these models through various components including data connectors, indexes, retrievers, query engines, and response synthesis. This framework facilitates the processing and integration of data, enabling applications to generate relevant responses grounded in the provided documents.",
+        "latency_ms": 27191.23
+      },
+      {
+        "question": "What are the main stages of a typical LlamaIndex workflow?",
+        "expected_source": "llamaindex.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A typical LlamaIndex workflow involves loading documents, transforming them into nodes, creating an index, retrieving relevant nodes, and generating a grounded response.",
+        "latency_ms": 9140.01
+      },
+      {
+        "question": "What does Retrieval-Augmented Generation combine?",
+        "expected_source": "rag_fundamentals.txt",
+        "retrieved_sources": [
+          "evaluation.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation.",
+        "latency_ms": 20441.34
+      },
+      {
+        "question": "What are the main stages of a basic RAG pipeline?",
+        "expected_source": "rag_fundamentals.txt",
+        "retrieved_sources": [
+          "llamaindex.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A basic RAG pipeline includes stages such as document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation.",
+        "latency_ms": 17826.41
+      },
+      {
+        "question": "What information can a ChromaDB record contain?",
+        "expected_source": "chromadb.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A ChromaDB record can contain an identifier, an embedding, document text, and metadata.",
+        "latency_ms": 19964.7
+      },
+      {
+        "question": "How does PersistentClient help a ChromaDB application?",
+        "expected_source": "chromadb.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "PersistentClient helps a ChromaDB application by storing the database data on disk, allowing the data to be reused across different runs of the application. This ensures that the application can maintain its state and previous state of data, facilitating more efficient and consistent operations.",
+        "latency_ms": 14427.33
+      },
+      {
+        "question": "What are text embeddings?",
+        "expected_source": "embeddings.txt",
+        "retrieved_sources": [
+          "embeddings.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Text embeddings are numerical vector representations of text. An embedding model maps text into a high-dimensional vector space where semantically related text is expected to have similar representations. These embeddings are used to process and compare text data, often in the context of information retrieval and natural language processing tasks.",
+        "latency_ms": 17051.98
+      },
+      {
+        "question": "Why should the same embedding model be used for documents and queries?",
+        "expected_source": "embeddings.txt",
+        "retrieved_sources": [
+          "embeddings.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Using the same embedding model for both documents and queries in a retrieval-augmented generation (RAG) system ensures consistency in the vector space representation, allowing for accurate vector similarity calculations. This consistency is crucial for effectively retrieving relevant chunks of text that can be used to generate a coherent and accurate response to the query. Different models might produce dissimilar representations of the same text, leading to unreliable retrieval and generation outcomes.",
+        "latency_ms": 17273.34
+      },
+      {
+        "question": "What does Precision at k measure?",
+        "expected_source": "evaluation.txt",
+        "retrieved_sources": [
+          "embeddings.txt",
+          "evaluation.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Precision at k measures the fraction of the top k retrieved results that are relevant.",
+        "latency_ms": 24688.64
+      },
+      {
+        "question": "What conditions make a comparison between two RAG systems fair?",
+        "expected_source": "evaluation.txt",
+        "retrieved_sources": [
+          "evaluation.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A fair comparison between two RAG systems should use the same questions, documents, embedding model, language model, and retrieval settings. This ensures that the differences in performance can be attributed to the systems themselves rather than external factors.",
+        "latency_ms": 23328.41
+      }
+    ]
+  },
+  "chromadb": {
+    "engine": "chromadb",
+    "query_count": 10,
+    "mean_latency_ms": 11040.17,
+    "median_latency_ms": 11304.88,
+    "p95_latency_ms": 19117.44,
+    "stdev_latency_ms": 5369.95,
+    "results": [
+      {
+        "question": "What is LlamaIndex used for?",
+        "expected_source": "llamaindex.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "LlamaIndex is used as a data framework for building applications that leverage large language models. It connects private or domain-specific data to these models through various components including data connectors, indexes, retrievers, query engines, and response synthesis. This framework facilitates the processing and integration of data to generate relevant responses from the models.",
+        "latency_ms": 14636.55
+      },
+      {
+        "question": "What are the main stages of a typical LlamaIndex workflow?",
+        "expected_source": "llamaindex.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A typical LlamaIndex workflow involves loading documents, transforming them into nodes, creating an index, retrieving relevant nodes, and generating a grounded response.",
+        "latency_ms": 7962.76
+      },
+      {
+        "question": "What does Retrieval-Augmented Generation combine?",
+        "expected_source": "rag_fundamentals.txt",
+        "retrieved_sources": [
+          "evaluation.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation.",
+        "latency_ms": 7334.32
+      },
+      {
+        "question": "What are the main stages of a basic RAG pipeline?",
+        "expected_source": "rag_fundamentals.txt",
+        "retrieved_sources": [
+          "llamaindex.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A basic RAG pipeline includes stages such as document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation.",
+        "latency_ms": 12684.38
+      },
+      {
+        "question": "What information can a ChromaDB record contain?",
+        "expected_source": "chromadb.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A ChromaDB record can contain an identifier, an embedding, document text, and metadata.",
+        "latency_ms": 5458.69
+      },
+      {
+        "question": "How does PersistentClient help a ChromaDB application?",
+        "expected_source": "chromadb.txt",
+        "retrieved_sources": [
+          "chromadb.txt",
+          "llamaindex.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "PersistentClient helps a ChromaDB application by storing the database data on disk, allowing the data to be reused across different runs of the application. This ensures that the application can maintain its state and previous state of data, facilitating more efficient and consistent operations.",
+        "latency_ms": 10965.56
+      },
+      {
+        "question": "What are text embeddings?",
+        "expected_source": "embeddings.txt",
+        "retrieved_sources": [
+          "embeddings.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Text embeddings are numerical vector representations of text. An embedding model maps text into a high-dimensional vector space where semantically related text is expected to have similar representations. These embeddings are used to process and analyze text data, enabling tasks such as information retrieval and language generation. In the context of information retrieval, documents are split into chunks and embedded before being indexed. At query time, the question is embedded using the same model, and vector similarity is used to find relevant chunks. The quality of embeddings, the size of chunks, the overlap between chunks, and the choice of embedding model can influence the quality of",
+        "latency_ms": 22783.63
+      },
+      {
+        "question": "Why should the same embedding model be used for documents and queries?",
+        "expected_source": "embeddings.txt",
+        "retrieved_sources": [
+          "embeddings.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Using the same embedding model for both documents and queries in a retrieval-augmented generation (RAG) system ensures consistency in the vector space representation, allowing for accurate vector similarity calculations. This consistency is crucial for effectively retrieving relevant chunks of text that can be used to generate a coherent and accurate response to the query. Different models might produce dissimilar representations of the same text, leading to unreliable retrieval and generation outcomes.",
+        "latency_ms": 12824.67
+      },
+      {
+        "question": "What does Precision at k measure?",
+        "expected_source": "evaluation.txt",
+        "retrieved_sources": [
+          "embeddings.txt",
+          "evaluation.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "Precision at k measures the fraction of the top k retrieved results that are relevant.",
+        "latency_ms": 4106.96
+      },
+      {
+        "question": "What conditions make a comparison between two RAG systems fair?",
+        "expected_source": "evaluation.txt",
+        "retrieved_sources": [
+          "evaluation.txt",
+          "rag_fundamentals.txt"
+        ],
+        "expected_source_retrieved": true,
+        "answer": "A fair comparison between two RAG systems should use the same questions, documents, embedding model, language model, and retrieval settings. This ensures that the differences in performance can be attributed to the systems themselves rather than external factors.",
+        "latency_ms": 11644.2
+      }
+    ]
+  }
+}
