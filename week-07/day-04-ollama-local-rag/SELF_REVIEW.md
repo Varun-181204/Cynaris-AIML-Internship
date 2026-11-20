@@ -12,6 +12,6 @@
 - [x] README and limitations documented.
 - [x] Two CIA review interactions documented.
 - [ ] Manually inspect all six comparison responses.
-- [ ] Final Git commits created.
-- [ ] Changes pushed to the existing W7 branch.
+- [x] Final Git commits created.
+- [x] Changes pushed to the existing W7 branch.
 - [ ] Existing PR #8 description updated.
