@@ -13,3 +13,11 @@ week-06/day-04-rag-chromadb/data/chroma_db/
 /week-06/day-05-document-chatbot/data/chroma_db/
 .pytest_cache/
 *.py[cod]
+
+# W7D5 local environment and generated databases
+.venv-w7d5/
+**/outputs/chroma_db/
+**/outputs/mlflow.db
+
+# MLflow generated tracking artifacts
+mlruns/
