@@ -1,0 +1,9 @@
+﻿fastapi==0.165.0
+uvicorn==0.54.0
+chromadb==1.5.9
+langgraph==1.2.24
+mlflow==3.18.0
+requests==2.34.2
+pytest==9.2.0
+httpx==0.28.1
+ruff==0.14.10
