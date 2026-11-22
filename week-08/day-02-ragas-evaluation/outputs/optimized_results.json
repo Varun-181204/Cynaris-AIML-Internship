@@ -1,0 +1,19 @@
+{
+  "evaluation": "optimized",
+  "model": "qwen2.5:3b",
+  "top_k": 2,
+  "samples": 10,
+  "faithfulness": 0.575,
+  "individual_scores": [
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.25,
+    0.5,
+    0.0,
+    1.0,
+    0.0
+  ]
+}

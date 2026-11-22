@@ -1,0 +1,12 @@
+ragas==0.4.4
+langchain
+langchain-core
+langchain-chroma
+langchain-ollama
+chromadb
+mlflow
+openai
+instructor
+datasets
+pytest
+ruff
