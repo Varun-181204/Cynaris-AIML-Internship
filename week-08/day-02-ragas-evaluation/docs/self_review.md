@@ -18,3 +18,14 @@
 - [ ] CIA Mentor Review 1 completed and logged.
 - [ ] CIA Mentor Review 2 completed and logged.
 - [ ] Changes committed and pushed.
+
+## Final Validation and Git Delivery
+
+- Ruff lint checks: Passed
+- Ruff formatting checks: Passed
+- Pytest: 5/5 tests passed
+- Evaluation evidence: Baseline and faithfulness optimisation results saved
+- CIA mentor interactions: 2 documented
+- Generated ChromaDB and MLflow files: Excluded through `.gitignore`
+- Changes pushed to `feat/aiml-W8-Varun-K-S`
+- Existing PR #9 updated; not merged
