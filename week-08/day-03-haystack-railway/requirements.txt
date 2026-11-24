@@ -1,0 +1,5 @@
+haystack-ai==3.5.0
+ollama-haystack==7.0.2
+fastapi==0.143.2
+uvicorn[standard]==0.54.0
+pypdf==6.21.2
