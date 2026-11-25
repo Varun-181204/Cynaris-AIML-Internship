@@ -1,0 +1,3 @@
+MLOps and Evaluation
+
+MLOps applies engineering practices to machine learning systems, including experiment tracking, reproducibility, monitoring, and evaluation. MLflow can track parameters, metrics, and artifacts. Ragas provides metrics for evaluating RAG system quality, including faithfulness and answer relevance.
