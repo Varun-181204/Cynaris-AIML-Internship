@@ -23,8 +23,9 @@
 - [x] Deployment limitations recorded.
 
 ## Mentor Review
-- [x] Two W8D2 CIA mentor interactions are documented in the existing review log.
-- [ ] Two separate W8D4 CIA mentor interactions completed and logged.
+- [x] CIA Interaction 1 – Technical documentation and production-readiness review.
+- [x] CIA Interaction 2 – Testing quality and reliability review.
+- [x] CIA mentor feedback documented in `docs/cia_review_log.md`.
 
 ## Deployment
 - [ ] W8D3 Docker build and smoke test verified.
