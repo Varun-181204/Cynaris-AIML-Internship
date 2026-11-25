@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "user_input": "What is Retrieval-Augmented Generation?",
+    "response": "Retrieval-Augmented Generation (RAG) is a system that combines information retrieval with language generation.",
+    "retrieved_contexts": [
+      "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant passages from an external knowledge source and supplies them as context to a language model. The model then generates an answer using the retrieved context. A basic RAG pipeline includes document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation. RAG can improve factual grounding, provide access to updated information, and reduce unsupported answers, but its quality depends on the source data and retrieval performance.",
+      "Retrieval evaluation measures how effectively a system finds relevant source passages. Precision at k is the fraction of the top k retrieved results that are relevant. Recall at k is the fraction of all known relevant items that appear among the top k results. End-to-end query latency measures the time taken to produce a response, including retrieval and language-model generation when both are part of the measured operation. A fair comparison should use the same questions, documents, embedding model, language model, and retrieval settings. A small evaluation dataset provides useful evidence but does not establish general performance."
+    ],
+    "reference": "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. It retrieves relevant passages from an external knowledge source and supplies them as context to a language model, which generates an answer using that context.",
+    "reference_source": "rag_fundamentals.txt",
+    "actual_sources": [
+      "evaluation.txt",
+      "rag_fundamentals.txt"
+    ]
+  },
+  {
+    "id": 2,
+    "user_input": "How does RAG combine retrieval and generation?",
+    "response": "RAG combines retrieval and generation by retrieving relevant passages from an external knowledge source and supplying them as context to a language model, which then generates an answer using the retrieved context.",
+    "retrieved_contexts": [
+      "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant passages from an external knowledge source and supplies them as context to a language model. The model then generates an answer using the retrieved context. A basic RAG pipeline includes document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation. RAG can improve factual grounding, provide access to updated information, and reduce unsupported answers, but its quality depends on the source data and retrieval performance.",
+      "ChromaDB is an open-source vector database used to store and retrieve embeddings with associated metadata and documents. A collection groups related records. Each record can contain an identifier, an embedding, document text, and metadata. Similarity search retrieves records whose vectors are close to a query vector. PersistentClient stores database data on disk so it can be reused across application runs. In a RAG application, ChromaDB can serve as the persistent vector store connected to a framework such as LlamaIndex."
+    ],
+    "reference": "RAG combines retrieval and generation by first finding relevant information from external sources and then providing that information as context to a language model to generate an answer.",
+    "reference_source": "rag_fundamentals.txt",
+    "actual_sources": [
+      "chromadb.txt",
+      "rag_fundamentals.txt"
+    ]
+  },
+  {
+    "id": 3,
+    "user_input": "What is a vector database?",
+    "response": "A vector database is an open-source database used to store and retrieve embeddings (vector representations) of data, along with associated metadata and documents.",
+    "retrieved_contexts": [
+      "ChromaDB is an open-source vector database used to store and retrieve embeddings with associated metadata and documents. A collection groups related records. Each record can contain an identifier, an embedding, document text, and metadata. Similarity search retrieves records whose vectors are close to a query vector. PersistentClient stores database data on disk so it can be reused across application runs. In a RAG application, ChromaDB can serve as the persistent vector store connected to a framework such as LlamaIndex.",
+      "LlamaIndex is a data framework for building applications powered by large language models. It connects private or domain-specific data to LLMs through data connectors, indexes, retrievers, query engines, and response synthesis. A typical workflow loads documents, transforms them into nodes, creates an index, retrieves relevant nodes, and generates a grounded response. VectorStoreIndex is a commonly used index that stores vector representations of document chunks and retrieves semantically relevant content."
+    ],
+    "reference": "ChromaDB is an open-source vector database used to store and retrieve embeddings along with associated metadata and documents.",
+    "reference_source": "chromadb.txt",
+    "actual_sources": [
+      "chromadb.txt",
+      "llamaindex.txt"
+    ]
+  },
+  {
+    "id": 4,
+    "user_input": "How does ChromaDB store embeddings?",
+    "response": "I don't know. The context does not provide information on how ChromaDB stores embeddings.",
+    "retrieved_contexts": [
+      "ChromaDB is an open-source vector database used to store and retrieve embeddings with associated metadata and documents. A collection groups related records. Each record can contain an identifier, an embedding, document text, and metadata. Similarity search retrieves records whose vectors are close to a query vector. PersistentClient stores database data on disk so it can be reused across application runs. In a RAG application, ChromaDB can serve as the persistent vector store connected to a framework such as LlamaIndex.",
+      "Embeddings are numerical vector representations of text. An embedding model maps text into a high-dimensional vector space in which semantically related text is expected to have similar representations. Documents are split into chunks and embedded before indexing. At query time, the question is embedded using the same compatible embedding model, and vector similarity is used to retrieve relevant chunks. Embedding quality, chunk size, overlap, and the choice of model can affect retrieval quality. Ollama can run embedding models locally, including nomic-embed-text."
+    ],
+    "reference": "ChromaDB stores records in collections. Each record can contain an identifier, embedding, document text, and metadata. PersistentClient stores database data on disk for reuse across application runs.",
+    "reference_source": "chromadb.txt",
+    "actual_sources": [
+      "embeddings.txt",
+      "chromadb.txt"
+    ]
+  },
+  {
+    "id": 5,
+    "user_input": "What are text embeddings?",
+    "response": "Text embeddings are numerical vector representations of text.",
+    "retrieved_contexts": [
+      "Embeddings are numerical vector representations of text. An embedding model maps text into a high-dimensional vector space in which semantically related text is expected to have similar representations. Documents are split into chunks and embedded before indexing. At query time, the question is embedded using the same compatible embedding model, and vector similarity is used to retrieve relevant chunks. Embedding quality, chunk size, overlap, and the choice of model can affect retrieval quality. Ollama can run embedding models locally, including nomic-embed-text.",
+      "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant passages from an external knowledge source and supplies them as context to a language model. The model then generates an answer using the retrieved context. A basic RAG pipeline includes document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation. RAG can improve factual grounding, provide access to updated information, and reduce unsupported answers, but its quality depends on the source data and retrieval performance."
+    ],
+    "reference": "Embeddings are numerical vector representations of text. They map text into a high-dimensional vector space where semantically related text is expected to have similar representations.",
+    "reference_source": "embeddings.txt",
+    "actual_sources": [
+      "embeddings.txt",
+      "rag_fundamentals.txt"
+    ]
+  },
+  {
+    "id": 6,
+    "user_input": "Why are embeddings useful in semantic search?",
+    "response": "I do not know. The context does not explicitly state why embeddings are useful in semantic search. It only mentions that embeddings map text into a high-dimensional vector space in which semantically related text is expected to have similar representations, but it does not provide a clear explanation of why this is useful in semantic search.",
+    "retrieved_contexts": [
+      "Embeddings are numerical vector representations of text. An embedding model maps text into a high-dimensional vector space in which semantically related text is expected to have similar representations. Documents are split into chunks and embedded before indexing. At query time, the question is embedded using the same compatible embedding model, and vector similarity is used to retrieve relevant chunks. Embedding quality, chunk size, overlap, and the choice of model can affect retrieval quality. Ollama can run embedding models locally, including nomic-embed-text.",
+      "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant passages from an external knowledge source and supplies them as context to a language model. The model then generates an answer using the retrieved context. A basic RAG pipeline includes document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation. RAG can improve factual grounding, provide access to updated information, and reduce unsupported answers, but its quality depends on the source data and retrieval performance."
+    ],
+    "reference": "Embeddings support semantic search by representing questions and document chunks as vectors. Vector similarity is then used to retrieve relevant chunks.",
+    "reference_source": "embeddings.txt",
+    "actual_sources": [
+      "embeddings.txt",
+      "rag_fundamentals.txt"
+    ]
+  },
+  {
+    "id": 7,
+    "user_input": "What is the purpose of RAG evaluation?",
+    "response": "I do not know. The context does not explicitly state the purpose of RAG evaluation.",
+    "retrieved_contexts": [
+      "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant passages from an external knowledge source and supplies them as context to a language model. The model then generates an answer using the retrieved context. A basic RAG pipeline includes document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation. RAG can improve factual grounding, provide access to updated information, and reduce unsupported answers, but its quality depends on the source data and retrieval performance.",
+      "Retrieval evaluation measures how effectively a system finds relevant source passages. Precision at k is the fraction of the top k retrieved results that are relevant. Recall at k is the fraction of all known relevant items that appear among the top k results. End-to-end query latency measures the time taken to produce a response, including retrieval and language-model generation when both are part of the measured operation. A fair comparison should use the same questions, documents, embedding model, language model, and retrieval settings. A small evaluation dataset provides useful evidence but does not establish general performance."
+    ],
+    "reference": "RAG evaluation measures retrieval effectiveness and response quality. Retrieval evaluation checks whether relevant source passages are found, while end-to-end latency measures the time taken to produce a response.",
+    "reference_source": "evaluation.txt",
+    "actual_sources": [
+      "evaluation.txt",
+      "rag_fundamentals.txt"
+    ]
+  },
+  {
+    "id": 8,
+    "user_input": "What does faithfulness measure?",
+    "response": "I do not know. The context does not mention what faithfulness measures.",
+    "retrieved_contexts": [
+      "Retrieval evaluation measures how effectively a system finds relevant source passages. Precision at k is the fraction of the top k retrieved results that are relevant. Recall at k is the fraction of all known relevant items that appear among the top k results. End-to-end query latency measures the time taken to produce a response, including retrieval and language-model generation when both are part of the measured operation. A fair comparison should use the same questions, documents, embedding model, language model, and retrieval settings. A small evaluation dataset provides useful evidence but does not establish general performance.",
+      "Embeddings are numerical vector representations of text. An embedding model maps text into a high-dimensional vector space in which semantically related text is expected to have similar representations. Documents are split into chunks and embedded before indexing. At query time, the question is embedded using the same compatible embedding model, and vector similarity is used to retrieve relevant chunks. Embedding quality, chunk size, overlap, and the choice of model can affect retrieval quality. Ollama can run embedding models locally, including nomic-embed-text."
+    ],
+    "reference": "Faithfulness measures whether a generated answer is supported by the retrieved context rather than containing unsupported claims.",
+    "reference_source": "evaluation.txt",
+    "actual_sources": [
+      "evaluation.txt",
+      "embeddings.txt"
+    ]
+  },
+  {
+    "id": 9,
+    "user_input": "What is LlamaIndex used for?",
+    "response": "LlamaIndex is a data framework used for building applications powered by large language models.",
+    "retrieved_contexts": [
+      "LlamaIndex is a data framework for building applications powered by large language models. It connects private or domain-specific data to LLMs through data connectors, indexes, retrievers, query engines, and response synthesis. A typical workflow loads documents, transforms them into nodes, creates an index, retrieves relevant nodes, and generates a grounded response. VectorStoreIndex is a commonly used index that stores vector representations of document chunks and retrieves semantically relevant content.",
+      "ChromaDB is an open-source vector database used to store and retrieve embeddings with associated metadata and documents. A collection groups related records. Each record can contain an identifier, an embedding, document text, and metadata. Similarity search retrieves records whose vectors are close to a query vector. PersistentClient stores database data on disk so it can be reused across application runs. In a RAG application, ChromaDB can serve as the persistent vector store connected to a framework such as LlamaIndex."
+    ],
+    "reference": "LlamaIndex is a data framework for building applications powered by large language models. It connects private or domain-specific data to LLMs using data connectors, indexes, retrievers, query engines, and response synthesis.",
+    "reference_source": "llamaindex.txt",
+    "actual_sources": [
+      "chromadb.txt",
+      "llamaindex.txt"
+    ]
+  },
+  {
+    "id": 10,
+    "user_input": "How does LlamaIndex support RAG applications?",
+    "response": "Based on the provided context, it appears that LlamaIndex supports RAG applications through its data connectors, indexes, retrievers, query engines, and response synthesis. Specifically, it is likely that LlamaIndex provides a data connector that ingests external knowledge sources, an index that stores vector representations of document chunks, a retriever that performs similarity retrieval, and a query engine that retrieves relevant passages from the external knowledge source. Additionally, LlamaIndex's response synthesis capabilities can be used to generate answers using the retrieved context.",
+    "retrieved_contexts": [
+      "LlamaIndex is a data framework for building applications powered by large language models. It connects private or domain-specific data to LLMs through data connectors, indexes, retrievers, query engines, and response synthesis. A typical workflow loads documents, transforms them into nodes, creates an index, retrieves relevant nodes, and generates a grounded response. VectorStoreIndex is a commonly used index that stores vector representations of document chunks and retrieves semantically relevant content.",
+      "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. Instead of relying only on information learned during model training, a RAG system retrieves relevant passages from an external knowledge source and supplies them as context to a language model. The model then generates an answer using the retrieved context. A basic RAG pipeline includes document ingestion, chunking, embedding generation, vector storage, similarity retrieval, and response generation. RAG can improve factual grounding, provide access to updated information, and reduce unsupported answers, but its quality depends on the source data and retrieval performance."
+    ],
+    "reference": "LlamaIndex supports RAG by loading documents, transforming them into nodes, creating indexes, retrieving relevant nodes, and generating grounded responses. VectorStoreIndex stores vector representations of document chunks and retrieves semantically relevant content.",
+    "reference_source": "llamaindex.txt",
+    "actual_sources": [
+      "llamaindex.txt",
+      "rag_fundamentals.txt"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-25T12:53:11.104701+00:00",
+  "question": "What is retrieval-augmented generation?",
+  "answer": "Retrieval-Augmented Generation (RAG) is a method that combines information retrieval with language generation.",
+  "sources": [
+    "ai_agent_workflows.txt",
+    "mlops_evaluation.txt",
+    "rag_fundamentals.txt"
+  ],
+  "retrieved_contexts": [
+    "Retrieval-Augmented Generation (RAG)\n\nRAG combines information retrieval with language generation. A system retrieves relevant document passages and provides them as context to a language model. This helps ground responses in source material and can reduce unsupported answers.",
+    "AI Agent Workflows\n\nAI agents can use tools and follow multi-step workflows to complete tasks. LangGraph supports stateful workflows represented as graphs with nodes and transitions. CrewAI supports collaboration between specialized agents assigned roles and tasks.",
+    "MLOps and Evaluation\n\nMLOps applies engineering practices to machine learning systems, including experiment tracking, reproducibility, monitoring, and evaluation. MLflow can track parameters, metrics, and artifacts. Ragas provides metrics for evaluating RAG system quality, including faithfulness and answer relevance."
+  ],
+  "metric": "Ragas Faithfulness",
+  "faithfulness_score": 1.0,
+  "evaluator_model": "qwen2.5:3b"
+}

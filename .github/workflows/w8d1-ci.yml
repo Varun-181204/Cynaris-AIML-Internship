@@ -1,0 +1,47 @@
+﻿name: W8D1 Production RAG CI
+
+on:
+  push:
+    branches:
+      - feat/aiml-W8-Varun-K-S
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  quality-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: week-08/day-01-production-rag/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r week-08/day-01-production-rag/requirements.txt
+
+      - name: Ruff lint
+        run: |
+          ruff check week-08/day-01-production-rag/src week-08/day-01-production-rag/tests
+
+      - name: Ruff format check
+        run: |
+          ruff format --check week-08/day-01-production-rag/src week-08/day-01-production-rag/tests
+
+      - name: Run API tests
+        run: |
+          python -m pytest week-08/day-01-production-rag/tests -v
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -f week-08/day-01-production-rag/Dockerfile \
+            -t cynaris-w8d1-rag-api:ci .

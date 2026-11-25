@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "reference": "Retrieval-Augmented Generation (RAG) combines information retrieval with language generation. It retrieves relevant passages from an external knowledge source and supplies them as context to a language model, which generates an answer using that context."
+  },
+  {
+    "id": 2,
+    "reference": "RAG combines retrieval and generation by first finding relevant information from external sources and then providing that information as context to a language model to generate an answer."
+  },
+  {
+    "id": 3,
+    "reference": "ChromaDB is an open-source vector database used to store and retrieve embeddings along with associated metadata and documents."
+  },
+  {
+    "id": 4,
+    "reference": "ChromaDB stores records in collections. Each record can contain an identifier, embedding, document text, and metadata. PersistentClient stores database data on disk for reuse across application runs."
+  },
+  {
+    "id": 5,
+    "reference": "Embeddings are numerical vector representations of text. They map text into a high-dimensional vector space where semantically related text is expected to have similar representations."
+  },
+  {
+    "id": 6,
+    "reference": "Embeddings support semantic search by representing questions and document chunks as vectors. Vector similarity is then used to retrieve relevant chunks."
+  },
+  {
+    "id": 7,
+    "reference": "RAG evaluation measures retrieval effectiveness and response quality. Retrieval evaluation checks whether relevant source passages are found, while end-to-end latency measures the time taken to produce a response."
+  },
+  {
+    "id": 8,
+    "reference": "Faithfulness measures whether a generated answer is supported by the retrieved context rather than containing unsupported claims."
+  },
+  {
+    "id": 9,
+    "reference": "LlamaIndex is a data framework for building applications powered by large language models. It connects private or domain-specific data to LLMs using data connectors, indexes, retrievers, query engines, and response synthesis."
+  },
+  {
+    "id": 10,
+    "reference": "LlamaIndex supports RAG by loading documents, transforming them into nodes, creating indexes, retrieving relevant nodes, and generating grounded responses. VectorStoreIndex stores vector representations of document chunks and retrieves semantically relevant content."
+  }
+]

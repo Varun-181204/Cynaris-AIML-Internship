@@ -21,3 +21,14 @@ week-06/day-04-rag-chromadb/data/chroma_db/
 
 # MLflow generated tracking artifacts
 mlruns/
+
+.venv-w8d1/
+
+# Week 8 virtual environment
+.venv-w8d1/
+
+.venv-w8d2/
+__pycache__/
+*.pyc
+week-08\day-02-ragas-evaluation/outputs/chroma_db/
+week-08\day-02-ragas-evaluation/outputs/mlflow.db
