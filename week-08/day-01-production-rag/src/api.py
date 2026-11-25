@@ -8,7 +8,6 @@ import requests
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-
 # Resolve project directories.
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -20,8 +19,7 @@ if not WEEK7_SOURCE.exists():
 
 # Reuse the original RAG implementation without modifying Week 7.
 sys.path.insert(0, str(WEEK7_SOURCE))
-import rag_system  # noqa: E402
-
+import rag_system
 
 # Override configuration so Week 8 has isolated runtime data.
 rag_system.ROOT = PROJECT_DIR

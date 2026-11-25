@@ -1,6 +1,6 @@
-# CIA Full-Stack Mentor Review Log — W8D2
+# CIA Full-Stack Mentor Review Log â€” W8D2
 
-## Review 1 — Architecture and Implementation
+## Review 1 â€” Architecture and Implementation
 Status: Preliminary mentor review received.
 
 Areas reviewed:
@@ -21,7 +21,7 @@ Mentor feedback:
 
 Follow-up requested: Share implementation snippets for detailed line-by-line feedback.
 
-## Review 2 — Evaluation and Optimisation
+## Review 2 â€” Evaluation and Optimisation
 Status: Methodology review received.
 
 Baseline:
@@ -36,7 +36,7 @@ Optimisation:
 - Improvement: 0.0492.
 
 Mentor recommendations:
-- Expand the evaluation dataset to 30–50 questions.
+- Expand the evaluation dataset to 30â€“50 questions.
 - Record retrieved chunk IDs and sources.
 - Perform error analysis on low-faithfulness answers.
 - Consider additional retrieval configurations.

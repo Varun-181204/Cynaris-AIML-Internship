@@ -10,8 +10,7 @@ from fastapi.testclient import TestClient
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_DIR / "src"))
 
-import api  # noqa: E402
-
+import api
 
 client = TestClient(api.app)
 
